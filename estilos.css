@@ -39,3 +39,24 @@ nav ul li {
   fnt-size: 20px;
   line-height: 30px;
 }
+
+.clear {
+  clear:both;
+}
+
+
+#contenido {
+  float: left;
+  width: calc(80% - 80px);
+  min-height: 500px;
+  background: #ffffff;
+  padding: 40px;
+  
+}
+
+.article {
+  color: #000000;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #000000;
+}
