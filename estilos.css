@@ -1,0 +1,41 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #ffffff;
+  font-family: Arial, Helvetica, 
+}
+
+#container{
+  width: 90%;
+  margin: 0px auto;
+  
+}
+
+header h1 {
+  background: #039ee6;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  line-height: 200px;
+  color: #ffffff;
+  border-bottom: 10px solid #ffffff;
+  font-size: 50px;
+}
+
+nav {
+  float:left;
+  height: 50px;
+  border-bottom: 5px solid #ffffff;
+}
+
+nav ul li {
+  float:left;
+  list-style: none;
+  margin: 10px;
+  color: #000000;
+  fnt-size: 20px;
+  line-height: 30px;
+}
