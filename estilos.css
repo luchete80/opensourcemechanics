@@ -45,14 +45,14 @@ nav ul li {
 }
 
 
-#contenido {
-  float: left;
-  width: calc(80% - 80px);
-  min-height: 500px;
-  background: #ffffff;
-  padding: 40px;
+/* #contenido { */
+  /* float: left; */
+  /* width: calc(80% - 80px); */
+  /* min-height: 500px; */
+  /* background: #ffffff; */
+  /* padding: 40px; */
   
-}
+/* } */
 
 .article {
   color: #000000;
