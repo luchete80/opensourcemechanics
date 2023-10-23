@@ -4,3 +4,7 @@ https://www.youtube.com/watch?v=PIFBWjLC8Dk&t=168s
 
 Tag cloud
 https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90
+
+Visitor counter without third parties
+https://hibbard.eu/how-to-make-a-simple-visitor-counter-using-php/
+
