@@ -29,6 +29,14 @@
       <p> - 20231020 -  Ok. We're online.
       </p>
     </article>
+       <h2> 20230829 C++ vs. Fortran Round 1 </h2>
+      <p>    
+    Ok , I have been done some testing comparing C++ and Fotran90 Smoothed particle Hydrodynamics codes. I get less than the half of calculation time Fotran 90. I discovered later that the comparison has been not fear, due to one of the 12 threads was writing outputs each 1/10th of the total time, whereas F90 code only writes an output at end time.
+
+    The problem solved is: Cantilever Beam subjected to bending at one end. SPH Method. 3744 particles. Explicit Reduced Verlet (constant time step) integrator. C++ is with an AOS scheme (vector of class Particle Pointers) and F90 is with a SOA scheme (Structure of arrays). #programming #coding #simulation #computational #solidmechanics
+    <img src="images/20230829_01.png" alt="Italian Trulli">
+    <img src="images/20230829_02.png" alt="Italian Trulli">
+    </p>
   <aside>
   <h1> Search </h1>
   <form>
