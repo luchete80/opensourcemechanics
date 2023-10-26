@@ -51,7 +51,9 @@ nav ul li {
 }
 
 
+
 #contenido {
+  font-family: 'Tw Cen MT';
   /* float: left; */
   width: calc(80% - 80px);
   min-height: 50px;
