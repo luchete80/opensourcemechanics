@@ -30,6 +30,7 @@
     <p>    
       After struggling a lot with virtual functions in CUDA, i just decided to kept a single class for materials in which I call a device function, 
       with a material as an argument to call all hardening rules (calc yield stress and calc tangent modulus) from there. 
+      Another problem with inherited class is the memcpy, so, I'm tired oh inheriting on CUDA so Is all inside material class by now.
       Also began to write the file input reading code (contact and materials). Still remain NASTRAN reading for rigid bodies.       
     </p>
     

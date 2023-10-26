@@ -25,7 +25,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.3883617"
-     inkscape:cx="188.71163"
+     inkscape:cx="308.99729"
      inkscape:cy="346.4515"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -48,8 +48,8 @@
        y="50.325035"
        ry="1.2865788"
        inkscape:export-filename="buttons\button_links.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
        style="font-size:3.175px;fill:#a57aa6;fill-opacity:1;stroke:none;stroke-width:1"
@@ -61,5 +61,27 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Tw Cen MT';-inkscape-font-specification:'Tw Cen MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:1"
          x="46.690224"
          y="61.173721">Links</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Tw Cen MT';-inkscape-font-specification:'Tw Cen MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#b99cca;fill-opacity:1;stroke:none;stroke-width:1"
+       x="11.243771"
+       y="92.237007"
+       id="text5131"
+       inkscape:export-filename="title.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500"><tspan
+         sodipodi:role="line"
+         id="tspan5129"
+         style="fill:#000000;fill-opacity:1;stroke-width:1"
+         x="11.243771"
+         y="92.237007">Open Source Mechanics</tspan></text>
+    <rect
+       style="fill:#cfc2e0;fill-opacity:1;stroke:none;stroke-width:1"
+       id="rect5911"
+       width="16.579792"
+       height="7.2417488"
+       x="113.96225"
+       y="71.083481"
+       ry="1.2865788" />
   </g>
 </svg>
