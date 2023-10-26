@@ -3,6 +3,11 @@
   padding: 0px;
 }
 
+
+/* .header-image { */
+/* background-image: url(“title.png”); */
+/* } */
+
 body {
   background: #ffffff;
   font-family: Arial, Helvetica, 
@@ -15,18 +20,19 @@ body {
 }
 
 header h1 {
-  background: #039ee6;
-  height: 200px;
+  background: #cfc2e0;
+  height: 150px;
   width: 100%;
   text-align: center;
-  line-height: 200px;
+  line-height: 150px;
   color: #ffffff;
   border-bottom: 10px solid #ffffff;
   font-size: 50px;
 }
 
 nav {
-  background: #00cc00;
+  font-family: 'Helvetica';
+  background: #cceecc;
   height: 50px;
   border-bottom: 5px solid #ffffff;
 }
@@ -55,6 +61,7 @@ nav ul li {
 }
 
 .article {
+  font-family: Helvetica;
   color: #000000;
   margin-top: 15px;
   margin-bottom: 15px;

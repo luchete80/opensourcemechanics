@@ -2,19 +2,21 @@
 <html>
   <head>
   <title> OPEN SOURCE MECHANICS </title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="styles.css" />
   </head>
 <body>
 <div id="container">
 <header>
-<h1> Open Source Mechanics </h1>
+<h1> <img alt="button" border="0" width="600" height="60" src="title.png" align="center"/>  </h1>
 </header>
   <nav>
     <ul>
-    <li> Main </li>
+    <li> Home </li>
     <li> Contact </li>
     <li> About </li>
-    <li> <a href="links.html"> Links </a> </li>
+    <li> Suscribe! </li>
+    <li>   <a href="links.html"> <img alt="button" border="0" width="100" height="35" src="buttons/button_links.png" align="center"/> </a> </li>
+    <!-- <li> <a href="links.html"> Links </a> </li> -->
     </ul>
   </nav>
   <div class="clear"></div>
@@ -23,20 +25,29 @@
       <h2> Title </h2>
       <p> Text</p>
     </article>
-  </section>
     <article class="article">
+    <h2> 20231025 WeldFormSPH - C++ CUDA Virtual Functions </h2>
+    <p>    
+      After struggling a lot with virtual functions in CUDA, i just decided to kept a single class for materials in which I call a device function, 
+      with a material as an argument to call all hardening rules (calc yield stress and calc tangent modulus) from there. 
+      Also began to write the file input reading code (contact and materials). Still remain NASTRAN reading for rigid bodies.       
+    </p>
+    
       <h2> Title </h2>
       <p> - 20231020 -  Ok. We're online.
       </p>
-    </article>
-       <h2> 20230829 C++ vs. Fortran Round 1 </h2>
-      <p>    
+    <h2> 20230829 C++ vs. Fortran Round 1 </h2>
+    <p>    
     Ok , I have been done some testing comparing C++ and Fotran90 Smoothed particle Hydrodynamics codes. I get less than the half of calculation time Fotran 90. I discovered later that the comparison has been not fear, due to one of the 12 threads was writing outputs each 1/10th of the total time, whereas F90 code only writes an output at end time.
 
     The problem solved is: Cantilever Beam subjected to bending at one end. SPH Method. 3744 particles. Explicit Reduced Verlet (constant time step) integrator. C++ is with an AOS scheme (vector of class Particle Pointers) and F90 is with a SOA scheme (Structure of arrays). #programming #coding #simulation #computational #solidmechanics
     <img src="images/20230829_01.png" alt="Italian Trulli">
     <img src="images/20230829_02.png" alt="Italian Trulli">
     </p>
+    </article>
+  </section>
+
+
   <aside>
   <h1> Search </h1>
   <form>
@@ -47,10 +58,13 @@
 </div>
 
 
- <script defer src="counter.js"></script>
- Visitor counter
- <div class="website-counter"></div>
-          
+ <!-- <script defer src="counter.js"></script> -->
+ <!-- Visitor counter -->
+ <!-- <div class="website-counter"></div> -->
+
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=9544979&style=0024&nbdigits=5&type=ip&initCount=1" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>                                    
       
       
 </body>
