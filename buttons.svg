@@ -26,7 +26,7 @@
      showgrid="false"
      inkscape:zoom="1.3883617"
      inkscape:cx="308.99729"
-     inkscape:cy="346.4515"
+     inkscape:cy="345.73123"
      inkscape:window-width="1366"
      inkscape:window-height="705"
      inkscape:window-x="-8"
@@ -61,6 +61,28 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Tw Cen MT';-inkscape-font-specification:'Tw Cen MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:1"
          x="46.690224"
          y="61.173721">Links</tspan></text>
+    <rect
+       style="fill:#b99cca;fill-opacity:1;stroke:none;stroke-width:0.60654"
+       id="rect234-9"
+       width="29.666615"
+       height="13.464277"
+       x="58.060612"
+       y="108.56413"
+       ry="1.2865788"
+       inkscape:export-filename="button_blog.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:#a57aa6;fill-opacity:1;stroke:none;stroke-width:1"
+       x="59.815998"
+       y="118.84109"
+       id="text3288-3"><tspan
+         sodipodi:role="line"
+         id="tspan3286-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Tw Cen MT';-inkscape-font-specification:'Tw Cen MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:1"
+         x="59.815998"
+         y="118.84109">Blog</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Tw Cen MT';-inkscape-font-specification:'Tw Cen MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#b99cca;fill-opacity:1;stroke:none;stroke-width:1"
