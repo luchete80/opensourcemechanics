@@ -74,6 +74,7 @@ with open(outfile, 'w') as f:
   for t in range (0, len(tag_arr)):
     # print ('<li><a data-weight="%d"\n' ,tag_arr_count[t])
     f.write('<li><a data-weight="' + str(tag_arr_count[t]) + 
-    '" href="#" onclick="javascript:search_by_string(' +tag_arr[t] + '#C++\');return false;">C++</a></li>\n')
+    '" href="#" onclick="javascript:search_by_string(\'#' +tag_arr[t] + '\');return false;">' +
+    tag_arr[t]  + '</a></li>\n')
     
   # sys.stdout = original_stdout

@@ -52,7 +52,7 @@
 @media (min-width:1024px) {
     .holy-grail-grid {
         /* grid-template-columns: repeat(4, 1fr); */
-        grid-template-columns: 200px auto 100px 300px;
+        grid-template-columns: 150px auto 100px 250px;
         grid-template-areas:
             'header header header header'
             'left-sidebar main-content main-content right-sidebar'
