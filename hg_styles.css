@@ -17,7 +17,9 @@
 /* assign columns to grid areas */
 .holy-grail-grid > .header {
     grid-area:header;
+		height:200px;
     background:#f97171;
+		/* position:fixed; */
 }
 .holy-grail-grid > .main-content {
     grid-area:main-content;
