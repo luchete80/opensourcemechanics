@@ -11,7 +11,7 @@ l = 0;
 # with open('index.html') as topo_file:
  # for line in topo_file:
 file = open('index.html','r')
-outfile = open('test.html','w')
+outfile = 'test.html'
 lines = file.readlines()
 # for line in file.readlines():
 main_end = False;
@@ -66,3 +66,14 @@ while (l < len (lines) and inside_main):
 print('tag_arr %s',tag_arr)
 print('tag_arr count %d',tag_arr_count)
 print('Encontrados %d tags' %tagcount)
+
+# FIRST: HAVE TO SEARCH <ul class ="cloud"
+with open(outfile, 'w') as f:
+  f.write ('test\n')
+  # sys.stdout = f
+  for t in range (0, len(tag_arr)):
+    # print ('<li><a data-weight="%d"\n' ,tag_arr_count[t])
+    f.write('<li><a data-weight="' + str(tag_arr_count[t]) + 
+    '" href="#" onclick="javascript:search_by_string(' +tag_arr[t] + '#C++\');return false;">C++</a></li>\n')
+    
+  # sys.stdout = original_stdout
