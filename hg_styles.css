@@ -30,6 +30,9 @@
 .holy-grail-grid > .right-sidebar {
     grid-area:right-sidebar;
     background:#c5ed77;
+		line-height: 1.0;
+		margin: 0;
+		header: 0;
 }
 .holy-grail-grid > .footer {
     grid-area:footer;
