@@ -35,6 +35,7 @@
 		line-height: 1.0;
 		margin: 0;
 		header: 0;
+		float: right;
 }
 .holy-grail-grid > .footer {
     grid-area:footer;
