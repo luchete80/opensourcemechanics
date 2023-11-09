@@ -38,19 +38,15 @@ ul.cloud a {
   */
 }
 
-/* ul.cloud a[data-weight="1"] { --size: 1; } */
-/* ul.cloud a[data-weight="2"] { --size: 2; } */
-/* ul.cloud a[data-weight="3"] { --size: 3; } */
-/* ul.cloud a[data-weight="4"] { --size: 4; } */
-/* ul.cloud a[data-weight="5"] { --size: 6; } */
-/* ul.cloud a[data-weight="6"] { --size: 8; } */
-/* ul.cloud a[data-weight="7"] { --size: 10; } */
-/* ul.cloud a[data-weight="8"] { --size: 13; } */
-/* ul.cloud a[data-weight="9"] { --size: 16; } */
-
 ul.cloud a[data-weight="1"] { --size: 1; }
-ul.cloud a[data-weight="2"] { --size: 3; }
-ul.cloud a[data-weight="3"] { --size: 6; }
+ul.cloud a[data-weight="2"] { --size: 2; }
+ul.cloud a[data-weight="3"] { --size: 3; }
+ul.cloud a[data-weight="4"] { --size: 4; }
+ul.cloud a[data-weight="5"] { --size: 6; }
+ul.cloud a[data-weight="6"] { --size: 8; }
+ul.cloud a[data-weight="7"] { --size: 10; }
+ul.cloud a[data-weight="8"] { --size: 13; }
+ul.cloud a[data-weight="9"] { --size: 16; }
 
 ul[data-show-value] a::after {
   content: " (" attr(data-weight) ")";
