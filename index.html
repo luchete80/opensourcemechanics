@@ -56,6 +56,39 @@
       <ul class="entrylist" id='list'> 
       <!-- <section id="contenido" > -->
       <!-- PRIMER ENTRADA AL BLOG ACA-->
+
+      <li class="entry">
+        <h2> 20231122 -  </h2>
+        #FEM #Explicit #Algorithm #Eulerian #Hourglass #ABAQUS #OpenRadioss #ALE
+				<p> 
+					Making some recopilation about hourglass modes. These are the modes which arises fromreduced integration in order to improve efficiency.
+					I'm trying to implement it on WeldFormFEM which works on full integration, but up until now solution is diverging. 
+					First paper about it which I readed was Benson. Later, I readed Goudreau works, which I wrote for WeldForm. 
+					Goudreau algorithm claims that this algorithm needs about 130 computer adds or multiples per hexa, whereas Flanagan-Belytschko algorithm needs about 630.
+					The exact same table is in LS-DYNA manual <a href="https://ftp.lstc.com/anonymous/outgoing/web/ls-dyna_manuals/DRAFT/DRAFT_Theory.pdf"> here </a>
+					<a href="images/20231122_hourglass.png"> </a>					
+					https://ftp.lstc.com/anonymous/outgoing/web/ls-dyna_manuals/DRAFT/DRAFT_Theory.pdf
+					
+					
+					OpenRadioss has incorporated several hourglass controls: Kosloff and Frasier (simple), Flanagan-Belytschko, Physical Hourglass Formulation and Advanced Elasto-plastic.
+					Links on <a href="https://2021.help.altair.com/2021/hwsolvers/rad/topics/solvers/rad/theory_element_hourglass_modes_r.htm"> hexa </a> 
+					and here on <a href="https://2021.help.altair.com/2021/hwsolvers/rad/topics/solvers/rad/theory_element__shell_elem_hourglass_modes_r.htm"> shells </a> 
+					On the other hand, ABAQUS uses kelvin viscoelastic control, <a href="https://classes.engineering.wustl.edu/2009/spring/mase5513/abaqus/docs/v6.6/books/usb/default.htm?startat=pt06ch21s01aus90.html"> here </a>.
+					
+        <table>
+					<tr>  <th> Author	</th> <th> Year		</th> <th> Title 	</th>  </tr>
+					<tr> <td> Kosloff, Frazier </td> <td> 1978 </td> <td> Treatment of hourglass patterns in low order finite element codes </td>  </tr>
+					<tr> <td> Flanagan, Belytscho </td> <td> 1981 </td> <td> A unif. strain hexa and quad and ortho hourglass control </td> </tr>
+					<tr> <td> Goudreau </td> <td> 1982 </td> <td> Recent Dev. in Large Scale FEM Lag. Hydrocode Tech </td>  </tr>
+					<tr> <td> Benson </td> <td> 1992 </td> <td> "Computational methods in Lagrangian and Eulerian hydrocodes" </td>  </tr>
+				
+				</table>
+					
+					
+				</p>
+					
+			</li>
+			
       <li class="entry">
         <h2> 20231108 -  </h2>
         #FEM #FORTRAN #Explicit #Coding #WeldForm #C++
