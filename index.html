@@ -58,6 +58,36 @@
       <!-- PRIMER ENTRADA AL BLOG ACA-->
 
       <li class="entry">
+        <h2> 20240220 - Hot Forging Methods </h2>
+        #FEM #FVM #Explicit #OpenRadioss #Forging #Forming
+				<p> 
+          It's been a while, again. Few days ago I was doing a little research about common methods for modeling hot forging in Metals.
+          My interest is to emulate some results of Aluminium hot forging, at relatively high speed, which have been obtained with Simufact.
+          This involves excessive large plastic strains and Simufact appeals to high remeshing.
+          This commercial software has a manual which describes that the method used for the simulation was the Finite Volume Method, but 
+          with a Lagrangian approach. By now, I will try to solve this process by several methods: Explicit FEM (OpenRadioss, eventually with ALE), Smoothed Particle
+          Hydrodynamics (Radioss, and WeldFormGPU), but I became to wander how about solving this with FVM.
+        </p>
+        <p>
+          Some years ago, I written a little FVM for solving Navier Stokes Eqns with an OpenFOAM flavour code (git@github.com:luchete80/fluxsol.git), but after some time 
+          with google, I came across the following great work: "An upwind cell centered Finite Volume Method for large strain explicit solid dynamics in OpenFOAM".
+          This PhD thesis consists of building some OpenFOAM solver by combining its standard CFD solvers, linking with Solid equations, associating 
+          some constituive and near incompressible relationships (don't know yet) and then moving the mesh (is a Lagrangian approach, but also could be built a Eulerian one, perhaps being diffusive, but like in Abaqus with FEM).
+          I discover also that the author of the references includes J. Bonet, who wrote exceptionals works regarding with SPH formulations.
+          Great news. 
+          I will give it a try. Will see!
+        </p>
+
+
+        </p>  
+          <img src="images/20231230_IF.jpg" alt="Italian Trulli">
+        </p>
+			</li>
+
+
+
+
+      <li class="entry">
         <h2> 20231230 - DSIF Double Sided Incremental Forming </h2>
         #FEM #Explicit #OpenRadioss #Forming #DSIF
 				<p> 
