@@ -61,27 +61,28 @@
           Last weekend commits: almost everything (except contact and hourglassing, oh and full integration not tested) is migrated to GPU / CPU in C++.
           Some errors in pressure and stress calcs but almost ready.
           I think could be convenient some Trello/jupyter nb or something like that to trace pendings. 
-          I noted the following about commit counting for each main branches:
-          Master: 361. Develop -> 463 ...
-          More than 100 commits ahead, WOW. 
+          I noted the following about commit counting for each main branches:</br>
+          Master: 361. Develop -> 463 ...</br>
+          More than 100 commits ahead, WOW.</br> </br>
           I'm pretty anxious about trying GPU performance of explicit FEM on GeFORCE 1660 Ti.
         </p>
         <p>
-          Some advances on DEVLOG
-          
-          20240302 - Added velocity and accel corrections. - Added mass matrices <br />
-          20240308 - Fixed Vol Calc (Gasuss weight) - Added mass matrices - Fixed nodal pos calculations in predictions <br />
-          20240312 - Fixed Vector to Ptr allocation <br />
-          20240315 - Fixed getVel fnc. Now strains are calculated ok.<br /> 
-                   - Corrected velocity components calculation of strani rate<br /> 
-                   - Corrected getDerivative function (several indices and offsets were wrong).<br /> 
-                   - Added velocity corrections <br />
-          20240315 - Added Shape matrix calculation (for element masses and lumped matrix) <br />
-          20240320 - Corrected mass matrix dimension <br />
-                   - Added AssemblyForces device call from Kernel.<br /> 
-                   - Added mass matrix calculation (parallel and CPU) <br />
-          20240321 - FIXED assembly (Two allocations were missed). - Changed Initial Density - Added first stress calc <br />
-          
+          Some advances on DEVLOG: <br />
+          <table>
+          <tr>  <th> Date	</th> <th> Details		</th> </tr>
+          <tr> <td> 20240302 </td>  <td>- Added velocity and accel corrections. - Added mass matrices </td>  </tr>
+          <tr> <td> 20240308 </td>  <td>- Fixed Vol Calc (Gasuss weight) - Added mass matrices - Fixed nodal pos calculations in predictions </td>  </tr>
+          <tr> <td> 20240312 </td>  <td>- Fixed Vector to Ptr allocation </td>  </tr>
+          <tr> <td> 20240315 </td>  <td>- Fixed getVel fnc. Now strains are calculated ok.<br></td>  </tr>
+          <tr> <td>         </td>  <td> - Corrected velocity components calculation of strani rate</td>  </tr>
+          <tr> <td> </td>  <td>         - Corrected getDerivative function (several indices and offsets were wrong).</td>  </tr> 
+          <tr> <td> </td>   <td>        - Added velocity corrections </td>  </tr>
+          <tr> <td>20240315 </td>  <td>- Added Shape matrix calculation (for element masses and lumped matrix) </td>  </td>  </tr></tr>
+          <tr> <td>20240320 </td>  <td>- Corrected mass matrix dimension </td>  </tr>
+          <tr> <td> </td>  <td>         - Added AssemblyForces device call from Kernel.</td>  </tr>
+          <tr> <td> </td>  <td>         - Added mass matrix calculation (parallel and CPU) </td>  </tr>
+          <tr> <td>20240321 </td>  <td>- FIXED assembly (Two allocations were missed). - Changed Initial Density - Added first stress calc </td>  </tr>
+          </table>
           Keep on going..
         </p>
           
