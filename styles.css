@@ -16,6 +16,11 @@ body {
   
 }
 
+@font-face {
+  font-family: mytwcent;
+  src: url(Ubuntu-L.ttf);
+}
+
 header h1 {
   font-family: 'Helvetica';
   background: #f2f2eff;
@@ -49,11 +54,16 @@ nav ul li {
 /* .clear { */
   /* clear:both; */
 /* } */
-
+/* FONT DOES NOT WORK */ 
+main-content {
+  font-family: mytwcent;
+    grid-area:main-content;
+    background:#fff;
+}
 
 
 #contenido {
-  font-family: 'Tw Cen MT';
+  font-family: mytwcent;
   float: left;
   width: calc(80% - 80px);
   min-height: 50px;
