@@ -12,6 +12,8 @@ https://hibbard.eu/how-to-make-a-simple-visitor-counter-using-php/
 counter with javascript
 https://contactmentor.com/build-website-visitor-counter-javascript/
 
+Very cool links 
+https://www.w3schools.com/html/html_css.asp
 
 
 

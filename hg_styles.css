@@ -22,8 +22,14 @@
     background:#000000;
 		/* position:fixed; */
 }
+
+@font-face {
+  font-family: mytwcent;
+  src: url(Ubuntu-L.ttf);
+}
+
 .holy-grail-grid > .main-content {
-  font-family: 'Tw Cen MT';
+  font-family: mytwcent;
     grid-area:main-content;
     background:#fff;
 }
