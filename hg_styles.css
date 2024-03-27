@@ -23,6 +23,7 @@
 		/* position:fixed; */
 }
 .holy-grail-grid > .main-content {
+  font-family: 'Tw Cen MT';
     grid-area:main-content;
     background:#fff;
 }
