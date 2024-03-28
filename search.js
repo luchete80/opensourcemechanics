@@ -31,6 +31,7 @@ function search_by_string(input) {
             x[i].style.display="list-item";                  
         } 
     } 
+    document.getElementById("demo").innerHTML = input;
 } 
 
 function search_HTML(){
