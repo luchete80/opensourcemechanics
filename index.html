@@ -57,6 +57,76 @@
       <!-- PRIMER ENTRADA AL BLOG ACA-->
 
       <li class="entry">
+        <h2> 20240424 - Kratos Multiphysics, HOWTO run PFEM Module </h2>
+        <p>
+        Finally, several steps concerning to usigng Kratos
+        </p>
+        <p>
+          1. Execute ./standard configure <br>
+          Adding <br>
+          export KRATOS_APPLICATIONS=<br>
+          add_app ${KRATOS_APP_DIR}/LinearSolversApplication<br>
+          add_app ${KRATOS_APP_DIR}/StructuralMechanicsApplication<br>
+          add_app ${KRATOS_APP_DIR}/FluidDynamicsApplication<br>
+          add_app ${KRATOS_APP_DIR}/PfemApplication<br>
+          add_app ${KRATOS_APP_DIR}/PfemSolidMechanicsApplication<br>
+          add_app ${KRATOS_APP_DIR}/PFEM2Application<br>
+          add_app ${KRATOS_APP_DIR}/MPMApplication<br>
+<br>  
+          And <br>
+<br>
+          # Configure<br>
+          cmake -H"${KRATOS_SOURCE}" -B"${KRATOS_BUILD}/${KRATOS_BUILD_TYPE}" \<br>
+          -DUSE_MPI=OFF                                                       \<br>
+          -DUSE_TRIANGLE_NONFREE_TPL=ON                                      \<br>
+          -DUSE_EIGEN_MKL=OFF                                                 \<br>
+          -DKRATOS_GENERATE_PYTHON_STUBS=ON                                  
+
+          <br><br>
+          2. make install . This create bin folder inside kratos (which is being ommited in git).
+          Inside bin, is Release folder in which is "KratosMultiphysics"
+          <br><br>
+          3.
+          This is in order to read scripts<br>
+          export PYTHONPATH=/home/weldform-pc/Numerico/Kratos/bin/Release
+          <br><br>
+          4.
+          Replace inside MainPfem.py:<br>
+          #import MainSolid<br>
+          with<br>
+          import KratosMultiphysics.SolidMechanicsApplication.solid_analysis as MainSolid
+          <br><br>
+
+          5
+          Inside TestFactory.py replace<br>
+
+          import KratosMultiphysics.PfemApplication.MainPfem <br>
+          with<br>
+
+          import KratosMultiphysics.PfemApplication.MainPfem as MainPfem
+
+          <br><br>
+          6. Inside solid_analysis.py replace<br>
+                  #self.t0p = timer.clock()<br>
+                  self.t0p = timer.process_time()<br>
+                  
+              <br><br>              
+          7. Change in DelaunayMeshingApplication/remesh_domains_process.py
+          No module named 'meshing_domain'. 
+          This file can be put inside test directory to be solved quickly.
+          Most clean solution could be update PYTHONPATH
+          <br><br>
+          8. Important how to convert mesh to MDPA
+          https://github.com/KratosMultiphysics/Kratos/wiki/Converting-Gmsh-mesh-format-to-MDPA
+          
+        <p> Still some errors<br>
+          <img src="images/20240424.png" alt="Italian Trulli">
+        </p>
+          
+        </p>
+			</li>
+
+      <li class="entry">
         <h2> 20240423 - Kratos, PFEM Module </h2>
           Today I built (once again and counting) Kratos Multiphysics in order to use PFEM module (also has MPM, PFEM2, among others).
           Is interesting to make (I will) a simple tutorial, since several things have to be changed, among them are the 
