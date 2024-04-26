@@ -57,14 +57,34 @@
       <!-- PRIMER ENTRADA AL BLOG ACA-->
 
       <li class="entry">
-        <h2> 20231230 - DSIF Double Sided Incremental Forming </h2>
+        <h2> 20240427 - AXISYMM SPH! </h2>
+        #WeldForm #SPH
+				<p> 
+           Still Trying with 2D Axisymmetric SPH on WeldForm. I'm following "Stable axisymmetric SPH formulation with no axis singularity"
+           (J Wang, D Chan and J Zhang, 2015). I've found several errors.
+           Steps for plane strain to Axisymm are: <br>
+           0-As in plane strain, I define r->x, z->y,but now is theta->z
+           1-Change density to axisymm density<br>
+           2-Replace momentum vars per new eqns (and ar has a hoop stress term added)<br>
+           3-Calculate Hoop Strain rate as vr/r<br>
+           4-What about strain and rot rates? <br>
+           
+        </p>
+        </p>  
+          <img src="images/20240425.png" alt="Italian Trulli">
+        </p>
+			</li>
+
+
+      <li class="entry">
+        <h2> 20240425 - DSIF Double Sided Incremental Forming </h2>
         #FEM #Explicit #OpenRadioss #Forming #DSIF
 				<p> 
            Fixed XY PLANE SYMM on WeldForm!!!!!
            Not working yet axisymm slice.
         </p>
         </p>  
-          <img src="images/20231230_IF.jpg" alt="Italian Trulli">
+          <img src="images/20240425.png" alt="Italian Trulli">
         </p>
 			</li>
 
