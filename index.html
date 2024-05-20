@@ -56,6 +56,30 @@
       <!-- <section id="contenido" > -->
       <!-- PRIMER ENTRADA AL BLOG ACA-->
 
+
+<li class="entry">
+        <h2> 20240520 - WeldForm FEM Working on C++ </h2>
+        #WeldForm #FEM 
+        <p> After several checks and errors found, finally, FEM explicit c++ CPU/GPU solver is working 
+            for 3d correctly. Is pending to check for Assemblying things.
+            WeldForm FEM is an explicit reduced integration FEM solver in order to solve large deformations quickly. 
+            The idea is to study performance of Lagrangian solver CPU vs GPU.
+            On the other side, to this code will be added an eulerian part (via operator split such as abaqus, and radioss)
+            in order to study very large displacments and strains problems. 
+            The code architecture is structured such as could be built for CPU / GPU only changing preprocessing.
+            Input could be given as LS-Dyna Format.
+            2D Is still pending (previous F90 version covers this.)
+        </p>
+       </p>  
+          <img src="images/20240520.png" alt="WeldForm FEM">
+        </p>           
+          
+                   
+        </p>
+
+			</li>
+
+
 <li class="entry">
         <h2> 20240514 - AXISYMM Frictional Contact is working </h2>
         #WeldForm #SPH #AxiSymmetric #Contact #Material
