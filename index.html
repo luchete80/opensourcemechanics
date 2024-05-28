@@ -57,6 +57,28 @@
       <!-- PRIMER ENTRADA AL BLOG ACA-->
 
     <li class="entry">
+        <h2> 20240528 - WeldForm FEM & SPH advances </h2>
+        #FEM #WeldForm #SPH
+        <p> Today was an enhancements day. I have fixed / added several things on both FEM & SPH versions of WeldForm solvers.<br>
+            In case of SPH solver, I have modified several thing in order to consider only contact conduction heat,
+            and deprecating plastic heat and friction heat by the moment. <br><br>
+            
+            20240527 - Added state of contact conduction at the begin of the solution.<br>
+            20240528 - Added feature of assign initial diff conditions for different Zone IDs <br>
+            - Fixed contact BC with amplitude function (there was readng zero value) <br>
+            - Added amplitude factor to be 1.0 by default (it was zero) <br>
+            - Fixed contact conduction and friction heat for Axisymmetric <br>
+            - Added optional plastic work heat <br>
+            - Fixed contact conduction reading <br> 
+            <br><br>
+            In case of FEM solver, I'm currently adjusting the code fixing some errors before passing to GPU version which have a couple of bugs.<br>
+            The intention is to compare the performnce on both CPU and GPU version, since the code 
+            is in fact the same, with modification through pre-processor instructions.
+
+        </p>    
+			</li>
+
+    <li class="entry">
         <h2> 20240524 - WeldForm GUI , again.</h2>
         #FEM #WeldForm #OpenGL #GUI
         <p> Again the built it renderer is being constructed. Fixed several index things 
