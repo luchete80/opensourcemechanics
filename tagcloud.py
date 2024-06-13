@@ -2,10 +2,11 @@
 # replace() , split() & join() , translate() , regex, reduce() , regex. findall() , 
 # map() & lambda() , for loop & join() , itertools. filterfalse() , and isspace() functions.
 # https://sparkbyexamples.com/python/python-remove-spaces-from-string/#:~:text=You%20can%20remove%20spaces%20from,()%20%2C%20and%20isspace()%20functions.
-
+import math
 # Recorro 
 print("Buscando tags...\n");
 tagcount = 0;
+factor = 0.3
 
 l = 0;
 # with open('index.html') as topo_file:
@@ -73,7 +74,7 @@ with open(outfile, 'w') as f:
   # sys.stdout = f
   for t in range (0, len(tag_arr)):
     # print ('<li><a data-weight="%d"\n' ,tag_arr_count[t])
-    f.write('<li><a data-weight="' + str(tag_arr_count[t]) + 
+    f.write('<li><a data-weight="' + str(int(math.ceil(factor*tag_arr_count[t]))) + 
     '" href="#" onclick="javascript:search_by_string(\'#' +tag_arr[t] + '\');return false;">' +
     tag_arr[t]  + '</a></li>\n')
     
