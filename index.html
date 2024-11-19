@@ -55,13 +55,30 @@
       <ul class="entrylist" id='list'> 
 
         <li class="entry">
+        <h2> 20241119 - FEM Remeshing almost done!! !!!! </h2>
+        #C++ #AMR #Remesh #DynELA
+        <p>      
+          Mapping from old to new mesh is done! All is performed via source  (old) mesh shape functions.<br>
+          So the procerure is:<br>
+          - Perform new (target) mesh (mmg library)<br>
+          - For every new target node <br>
+          - Check if is inside element (if all internal coordinates are positive) <br>          
+          - Field Mapping <br>
+         <li> <a href="https://www.youtube.com/shorts/HlfD0k0uaQI"> Youtube Video here </a> </li>
+        </p>
+        <p>
+          <img src="images/20241119.png"    alt="Compression" height="350" >
+        </p>
+			</li>
+
+        <li class="entry">
         <h2> 20241114 - GUI working on Linux & MSWIN !!!! </h2>
         #C++ #MSVC #Singleton #architecture #GUI
         <p>  
           Excellent news!!! Finally, after a "LITTLE" lot of struggling, WeldFormGUI is working on both systems.
         </p>
         <p>
-          I had to add external symbols, and TO CHANGE SINGLETON GET INSTANCE IMPLEMENTATION TO C++ file INTSTEAD OF INLINE.
+          All were running ok in Ubuntu, but to make it work in Windows, I had to add external symbols, and TO CHANGE SINGLETON GET INSTANCE IMPLEMENTATION TO C++ file INTSTEAD OF INLINE.
           (Some may need this info).So, now is slso possible to generate quad elements from nodes with python.<br>
           I think is also needed:<br>
           - Output on console<br>
