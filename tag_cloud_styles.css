@@ -32,6 +32,7 @@ ul.cloud a {
   padding: 0.125rem 0.25rem;
   position: relative;
   text-decoration: none;
+  
   /* 
   For different tones of a single color
   opacity: calc((15 - (9 - var(--size))) / 15); 
