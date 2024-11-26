@@ -7,11 +7,11 @@
    viewBox="0 0 508.00003 285.74999"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    sodipodi:docname="HERRAMIENTAS.svg"
-   inkscape:export-filename="/home/weldform-pc/Tools_20241126.png"
-   inkscape:export-xdpi="109.47"
-   inkscape:export-ydpi="109.47"
+   inkscape:export-filename="D:\Luciano\Numerico\opensourcemechanics\images\20241126_Tools.png"
+   inkscape:export-xdpi="50"
+   inkscape:export-ydpi="50"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -26,13 +26,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="785"
-     inkscape:cy="362"
-     inkscape:window-width="1850"
-     inkscape:window-height="1016"
-     inkscape:window-x="70"
-     inkscape:window-y="27"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="803.2733"
+     inkscape:cy="185.26198"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:snap-global="false"
@@ -300,15 +300,15 @@
        id="text3398-1-4-2"
        transform="scale(0.96777549,1.0332975)"><tspan
          sodipodi:role="line"
-         id="tspan3396-0-4-8"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.58107px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.239527"
          x="425.9743"
-         y="168.49927">Materiales</tspan><tspan
+         y="168.49927"
+         id="tspan90299">Complex</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.58107px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.239527"
          x="425.9743"
-         y="181.09103"
-         id="tspan90299">complejos </tspan></text>
+         y="180.82693"
+         id="tspan7500">Materials</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:9.58107px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.239527"
@@ -320,7 +320,7 @@
          id="tspan3396-0-4-8-9"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.58107px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.239527"
          x="294.39371"
-         y="179.66315">Falla</tspan></text>
+         y="179.66315">Failure</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:8.34234px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.208559"
@@ -332,7 +332,7 @@
          id="tspan3396-0-4-6"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:8.34234px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.208559"
          x="326.2207"
-         y="194.39282">Rápido</tspan></text>
+         y="194.39282">Fast</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:8.34234px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.208559"
@@ -344,7 +344,7 @@
          id="tspan3396-0-4-6-6"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:8.34234px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.208559"
          x="427.48642"
-         y="194.01619">Solo Tabla </tspan></text>
+         y="194.01619">Only table</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:8.34234px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.208559"
@@ -356,7 +356,7 @@
          id="tspan3396-0-4-6-7"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:8.34234px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.208559"
          x="326.3382"
-         y="222.72653">Rápido</tspan></text>
+         y="222.72653">Fast</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:8.34234px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.208559"
@@ -368,7 +368,7 @@
          id="tspan3396-0-4-6-7-8"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:8.34234px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.208559"
          x="327.41705"
-         y="237.83722">Rápido</tspan></text>
+         y="237.83722">Slow</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:8.34234px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.208559"
@@ -380,7 +380,7 @@
          id="tspan3396-0-4-6-7-5"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:8.34234px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.208559"
          x="327.21118"
-         y="207.97015">Lento</tspan></text>
+         y="207.97015">Slow</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:9.58107px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.239527"
@@ -464,7 +464,7 @@
          id="tspan3396-0-4-2-1-2"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.58107px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.239527"
          x="3.2690904"
-         y="15.944445">Fecha 20241126</tspan></text>
+         y="15.944445">Date 20241126</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:9.58107px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.239527"
@@ -1280,7 +1280,7 @@
          id="tspan3396-8"
          style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:9.77163px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.244291"
          x="71.029854"
-         y="58.148483">Forja</tspan></text>
+         y="58.148483">Forge</tspan></text>
     <rect
        style="fill:#dcdcdc;fill-opacity:1;stroke-width:0.158089;stroke-dasharray:0.0395219, 0.0395219"
        id="rect6990-2-6"
@@ -1343,12 +1343,12 @@
            id="tspan3396-8-4"
            style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:8.71973px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.217994"
            x="89.684212"
-           y="51.482002">Corte Ort</tspan><tspan
+           y="51.482002">Orth Cut</tspan><tspan
            sodipodi:role="line"
            style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:8.71973px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.217994"
            x="89.684212"
-           y="62.941772"
-           id="tspan125108">/Falla</tspan></text>
+           y="62.701416"
+           id="tspan125108">/Fail</tspan></text>
     </g>
     <g
        id="g9199-4"
@@ -1376,7 +1376,7 @@
            sodipodi:role="line"
            style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.9265px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.198163"
            x="90.496231"
-           y="54.143692"
+           y="53.925201"
            id="tspan138974">Forming</tspan></text>
     </g>
     <g
@@ -2115,7 +2115,7 @@
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.0366px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.250917"
          x="79.230698"
          y="12.494258"
-         id="tspan158626">Necesitan remsh/ALE  o similar</tspan></text>
+         id="tspan158626">Need remsh/ALE  or eulerian</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.0366px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.250917"
@@ -2127,7 +2127,7 @@
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.0366px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.250917"
          x="226.61716"
          y="12.43286"
-         id="tspan158626-3">Pueden resolverse sin remallado</tspan></text>
+         id="tspan158626-3">Can be solved w/o rmsh </tspan></text>
     <g
        id="g80330"
        transform="translate(11.25305,-126.99978)">
@@ -2293,12 +2293,12 @@
                id="tspan3396-0-4-2-1-3-2-1"
                style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7.93978px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198495"
                x="336.47501"
-               y="103.87171">(*) - Exp (Proc Rápidos)</tspan><tspan
+               y="103.87171">(*) - Exp (Fast Processes)</tspan><tspan
                sodipodi:role="line"
                style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7.93978px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198495"
                x="336.47501"
-               y="114.30644"
-               id="tspan47983">      - Imp (Proc Lentos)</tspan></text>
+               y="114.08759"
+               id="tspan47983">      - Imp (Slow Processes</tspan></text>
           <text
              xml:space="preserve"
              style="font-style:normal;font-weight:normal;font-size:7.29137px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.182285"
@@ -2310,12 +2310,7 @@
                style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7.29137px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.182285"
                x="334.16302"
                y="121.07332"
-               id="tspan47983-2">(**) - Por ahora soporta 1 sóla sup de contacto</tspan><tspan
-               sodipodi:role="line"
-               style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:7.29137px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.182285"
-               x="334.16302"
-               y="130.65588"
-               id="tspan84720">          en Modo GPU</tspan></text>
+               id="tspan84720">(**) - Almost ready 2+ cont surfs</tspan></text>
         </g>
         <text
            xml:space="preserve"
@@ -2328,12 +2323,12 @@
              style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:6.652px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.1663"
              x="350.71924"
              y="141.51781"
-             id="tspan84720-2">FEM Rápido refiere al método convencional </tspan><tspan
+             id="tspan84720-2">FEM Slow: several int points.</tspan><tspan
              sodipodi:role="line"
              style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:6.652px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.1663"
              x="350.71924"
-             y="150.2601"
-             id="tspan114640">(varios puntos de integración gauss), y el rápido solo 1</tspan></text>
+             y="150.07674"
+             id="tspan114640">Fast: one inte. point</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:6.73523px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.168381"
@@ -2352,7 +2347,7 @@
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text101760"
-       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect101762)" />
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect101762);fill:#000000;fill-opacity:1;stroke:none" />
     <g
        id="g118864"
        transform="matrix(0.78800339,0,0,0.78800339,108.00861,-12.830656)">
@@ -2367,7 +2362,7 @@
            id="tspan3396-0-4-6-7-2"
            style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:8.34234px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.208559"
            x="487.25586"
-           y="67.025543">Rápido</tspan></text>
+           y="67.025543">Slow</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:8.34234px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.208559"
@@ -2379,7 +2374,7 @@
            id="tspan3396-0-4-6-7-5-2"
            style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:8.34234px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.208559"
            x="487.59915"
-           y="47.409317">Lento</tspan></text>
+           y="47.409317">Fast</tspan></text>
       <g
          id="g25897-3"
          transform="matrix(1.2144493,0,0,1.2144493,292.8082,18.140905)">
@@ -2475,7 +2470,7 @@
              id="tspan3396-0-4-8-9-1"
              style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.58107px;font-family:'Encode Sans';-inkscape-font-specification:'Encode Sans, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.239527"
              x="400.63571"
-             y="54.642479">Cálculo</tspan></text>
+             y="54.642479">Calc</tspan></text>
         <g
            id="g27953-9-6"
            transform="matrix(0.98264755,0,0,0.98264755,268.97266,-15.336955)">
