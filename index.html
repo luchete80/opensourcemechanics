@@ -55,6 +55,30 @@
       <ul class="entrylist" id='list'> 
 
         <li class="entry">
+        <h2> 20241203 - Tri(Tet) -> Quad (Hex) Remeshing Conversion Tools </h2>
+        #AMR #Meshing 
+        <p>      
+          Yesterday I've playing around & learning with tethex library, which converts tetra(tri in 2D) to hexa (quad in 2D).<br>
+          I really like this tiny library, It does not recombine tris to quad like in gmsh, but instead it partitions the tris into quads.<br>
+          This way is always only quads (hexas) in your new mesh. <br>
+          <b>I'm making a generic converter constructor to work from a list of tris and vertices, since it reads only gmsh files.</b><br>
+          Differents libraries which does same things (but only in 2D) are (I've put stars, watchers and forks count):<br>
+          <p>
+          <a href="https://github.com/FloSewn/TQMesh" > TQMesh </a><br>
+          61 5 16.  Active<br> <br>
+
+          <a href="https://github.com/davinakano/tri-quad-mesh-converter" > tri-quad-mesh-converter </a><br>
+          19 2 9.  Qt4 y vtk<br><br>
+
+          <a href="https://github.com/uhweili/Q-Morph"> Q-Morph</a><br>
+          14 2 4  
+        </p>
+        <p>
+          <img src="images/20241203_tethex.png"    alt="Compression" height="350" > 
+        </p>
+			</li>
+
+        <li class="entry">
         <h2> 20241126 - Metal Forming Tools </h2>
         #FME #FVM #SPH #GPU
         <p>      
