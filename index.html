@@ -54,6 +54,33 @@
       
       <ul class="entrylist" id='list'> 
 
+      <li class="entry">
+        <h2> 20241227 - WeldFormFEM CPU/GPU NEWS!!  </h2>
+        #FEM #FVM #SPH #GPU
+        <p>      
+          Hello! WeldFormFEM is growing!! Now It accepts tetra elements in order to do some basic remeshing using mmg<br>
+          <a href="https://github.com/luchete80/WeldFormFEM" >WeldFormFEM Link </a> .<br>
+          Such as I did with ReDynELA (link <a href="https://github.com/luchete80/redynela" >here </a>), I'm adding remeshing capabilities to WeldForm FEM<br>
+          The differencies are the following: <br>
+          - WeldFormFEM is being written with an SOA (Structures of arrays), which seems to be more effective on GPU, whereas reDynELA works with standard OOP.<br>
+          - WeldFormFEM works with reduced integration hexas (faster than 8 gauss point) and now with tetras.<br>
+          - WeldFormFEM treats contact surfaces as rigid y now and they are not remeshed.<br>
+          
+        </p>
+        <p>
+          <img src="images/20241227_FEM.png"    alt="Compression" height="250" > 
+          <img src="images/20241227_FEM_2.png"    alt="Compression" height="250" > 
+        </p>
+			</li>
+
+        <li class="entry">
+        <h2> 20241209 - Tri(Tet) -> Quad (Hex) Remeshing Conversion Tools #2</h2>
+        #AMR #Meshing 
+        I've made a simple code to convert a mesh from tria to quad but not by splitting quads, but instead trying to combine them to trias.<br>
+        Here is the repo:<br>
+        https://github.com/luchete80/tri2quad<br>
+        </li>
+
         <li class="entry">
         <h2> 20241203 - Tri(Tet) -> Quad (Hex) Remeshing Conversion Tools </h2>
         #AMR #Meshing 
@@ -80,7 +107,7 @@
 
         <li class="entry">
         <h2> 20241126 - Metal Forming Tools </h2>
-        #FME #FVM #SPH #GPU
+        #FEM #FVM #SPH #GPU
         <p>      
           So,these are some tools I'm using. <br>
           Theonly one native is OpenRadioss.<br>
