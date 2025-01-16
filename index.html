@@ -54,6 +54,49 @@
       <ul class="entrylist" id='list'> 
 
 <li class="entry">
+        <h2> 20250116 - WeldFormFEM Tetras!! </h2>
+        #FEM #TETRA #HEXA #WeldForm #Hourglass #Locking
+        <p>      
+          Hi!!! News about WeldFormFEM CPU/GPU code: <br>
+          - Thermal coupled is being written!! <br>
+          - Adding remeshing "skeleton".. <br>
+          - Adding volumetric locking treatement<br>
+          I have found an excelent LS-Dyna Element behavior. Such Benson 1992 states, Constant Stress Tetra/Triangle (CST)
+          behaves overly stiff, but he do not propose a solution. <br>
+          HOWEVER, comercial FEM Forming tools like DEFORM, FORGE & qFORM (Simufact works with FVM in 3D), works with tetras.
+          However Locking 
+          
+
+          
+          Locking behavior in CST or HEXA elements typically arises in specific contexts, 
+          such as incompressible or nearly incompressible material behavior, 
+          bending-dominated problems, or mesh refinement with ill-conditioned elements.
+          This can be volumetric locking of shear locking.
+          Bonet (who also has done and still doing an extensive work with SPH), propose to implement an average pressure to overcome locking.<br>
+
+          Hourglass models (or Zero energy modes) only affects hexas, and are  observed in reduced integration elements (1 gauss point), 
+          and are deformation states in which central element gauss point presents null value but nodes don't.<br>
+          Regarding to Hexa locking, I will delay a little bit the coding (see 20241122 entry) since I thinnk Tetra is straightforward.<br>          
+          
+          <br> <a href="https://github.com/luchete80/WeldFormFEM" >WeldFormFEM Link </a> .<br>
+          
+          
+          <br>
+          
+          
+        </p>
+        <p>
+          <img src="images/20250116_1.png"    alt="Compression" height="275" > 
+          <img src="images/20250116_2.png"    alt="Compression" height="275" > 
+          <img src="images/20250116_3.png"    alt="Compression" height="275" > 
+          <img src="images/20250116_4.png"    alt="Compression" height="275" > 
+          <img src="images/20250116_5.png"    alt="Compression" height="275" > 
+          <img src="images/20250116_6.png"    alt="Compression" height="275" > 	
+        </p>
+  </li>
+  
+  
+<li class="entry">
         <h2> 20250107 - WeldFormFEM NEWS!! Again!! </h2>
         #FEM #FVM #GPU
         <p>      
