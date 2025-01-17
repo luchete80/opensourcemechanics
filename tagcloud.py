@@ -6,7 +6,7 @@ import math
 # Recorro 
 print("Buscando tags...\n");
 tagcount = 0;
-factor = 0.3
+factor = 0.2
 
 l = 0;
 # with open('index.html') as topo_file:
