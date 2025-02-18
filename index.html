@@ -58,11 +58,14 @@
             #FEM #HEXA #WeldForm #Hourglassing #CUDA #GPU
             <p>      
               Writing fixes continues! Matrices calcDerivatives allocation was wrongly defined.<br>
-              Problem was that in CUDA thi is a 
+              Problem was that in CUDA all Matrix ops and objects are defined in device but was using cudaMalloc & cudaFree functions, which
+              are intender for using from host<br>
+              Now is remaining to check that values are not consistent, but mem alloc were solved.<br>
+              Next action will be to replace global calls entirely using omega_h library style function. 
             </p>
             <p>
               <img src="images/20250218_1.png"    alt="Compression" height="200" >     
-         
+              <img src="images/20250218_2.png"    alt="Compression" height="600" >              
       
       </p>
       </li>
