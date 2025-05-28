@@ -55,6 +55,35 @@
       <ul class="entrylist" id='list'> 
 
     <li class="entry">
+            <h2> 20250528 - MetalCut OpenRadioss!!! </h2>
+            #FEM #Forging #Implicit #Static #TOP5
+            <p>      
+
+            Ok. Has been one month. 
+            After a lot of research I have been studying the top 5 Commercial Simulation forging tools.
+            Why comercial? Is because I wanted to know how forging is treated.<br>
+            To my surprise, the TOP 5 tools use mostly implicit pseudo Static problems. <br>
+            So, these are excellent news, considering times to solve explicit simulations could results larger,
+            together with the conditionally stable methods, remeshing decreasing even more simulation times. <br>
+            So... Welcome to ForgeFormFEM !!! I'm changin the method from explicit to implicit.<br>
+            So I will use Eigen and PETSC (yeah, PETSC, you read it right.)<br>
+            I'm trying to remembwer the implicit solving steps <br><br>
+            1.Get Current Coordinates<br>
+            2. Shape Function gradients dNdx<br>
+            3. Build deformation gradient F<br>
+            4. Almansi strain <br>
+            5. Stress<br>
+            6. B matrices (Geo & Material)<br>
+            7. Internal Force Vector<br>
+            8.Material K = BT D B <br>
+            9. Geo K = BT Sigma B (I will post about these)<br>
+            Wish me luck!
+            
+            </p>
+            
+    </li>
+
+    <li class="entry">
             <h2> 20250428 - MetalCut OpenRadioss!!! </h2>
             #FEM #MetalCut
             <p>      
