@@ -1,33 +1,36 @@
-name: Deploy Astro site to GitHub Pages
+name: Build and Deploy Astro site
 
 on:
   push:
     branches:
-      - main  # or your default branch name
+      - main   # or your default branch name
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+    - name: Checkout repo
+      uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'  # or a version you prefer
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'   # or your preferred Node version
 
-      - name: Install dependencies
-        run: npm install
-        working-directory: ./site  # your Astro folder
+    - name: Install dependencies
+      run: npm install
+      working-directory: ./site   # adjust if your Astro project is inside a folder
 
-      - name: Build site
-        run: npm run build
-        working-directory: ./site
+    - name: Build site
+      run: npm run build
+      working-directory: ./site
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site/dist
-
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site/dist
+        publish_branch: gh-pages
+        user_name: github-actions
+        user_email: github-actions@github.com
