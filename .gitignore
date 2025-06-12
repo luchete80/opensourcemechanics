@@ -1,0 +1,24 @@
+# Node modules inside site/
+site/node_modules/
+
+# Build output
+site/dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: ignore backups or temp files anywhere
+*.bak
+*.tmp
+
+# Optional: Ignore IDE/editor config files
+.vscode/
+.idea/
+
+ 

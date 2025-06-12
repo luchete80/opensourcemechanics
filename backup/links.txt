@@ -1,0 +1,33 @@
+Good blog page
+My first blog model static page 
+https://www.youtube.com/watch?v=PIFBWjLC8Dk&t=168s
+
+
+Tag cloud
+https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90
+
+Visitor counter without third parties
+https://hibbard.eu/how-to-make-a-simple-visitor-counter-using-php/
+
+counter with javascript
+https://contactmentor.com/build-website-visitor-counter-javascript/
+
+Very cool links 
+https://www.w3schools.com/html/html_css.asp
+
+
+
+TAG CLOUD 
+/// SOLO CON HTML Y CSS ////
+
+https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90
+
+Function on link click
+https://stackoverflow.com/questions/1265887/call-javascript-function-on-hyperlink-click
+
+
+MUY BUENO JAVASCRIPT ON CLICK
+https://stackoverflow.com/questions/1070760/javascript-href-vs-onclick-for-callback-function-on-hyperlink
+
+
+
