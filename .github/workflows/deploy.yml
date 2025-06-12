@@ -32,5 +32,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./site/dist
         publish_branch: gh-pages
+        cname: opensourcemech.com
         user_name: github-actions
         user_email: github-actions@github.com
