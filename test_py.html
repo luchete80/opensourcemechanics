@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pyodide Runner</title>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.2/full/pyodide.js"></script>
+</head>
+<body>
+  <h2>Run Python in your browser</h2>
+  <textarea id="pycode" style="width: 100%; height: 120px;">print("Hello from Pyodide!")</textarea>
+  <br />
+  <button onclick="runPython()">Run</button>
+  <pre id="pyoutput" style="background: #f0f0f0; padding: 1rem;"></pre>
+
+  <script>
+    let pyodideReady = loadPyodide();
+
+    async function runPython() {
+      const output = document.getElementById("pyoutput");
+      const code = document.getElementById("pycode").value;
+      output.textContent = "Running...";
+
+      try {
+        let pyodide = await pyodideReady;
+        let result = await pyodide.runPythonAsync(code);
+        output.textContent = result;
+      } catch (err) {
+        output.textContent = "Error: " + err;
+      }
+    }
+  </script>
+</body>
+</html>
