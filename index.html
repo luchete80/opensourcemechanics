@@ -54,6 +54,28 @@
       
       <ul class="entrylist" id='list'> 
 
+    <li class="entry">
+            <h2> 20260211 - Implicit UP Solver is gettin' bigger !!! </h2>
+            #FEM #Forging #Implicit #Quad #2D #Contact #Martins #UP
+            <p>      
+              Ok, I have tested first version of Paulo Martin's Style UP implicit solver and is working smoothly!<br>
+              It has only an fixed point iteration Picard style, which will be the first iterations starter before 
+              switching to NR. <br>
+              This is a Mixed VP formulation, rigid viscoplastic flow formulation, with quasi-static regime, 
+              updated lagrangian, with Norton-Hoff Material.<br>
+              The pressure is obtaining by divergence penalization, and hence no stabilization (like PSPG) is needed.<br>
+              Q1-P0 element is used, with selective integration.<br>
+              I have migrated to C++ and is ready to add contact feature!<br>
+              
+            </p>
+      </p>    C++<br>
+              <img src="images/20260211_Martins_01.png"    alt="Compression" height="200" >   <br>                    
+              python<br>
+              <img src="images/20260211_Martins_02.png"    alt="Compression" height="300" >                                     
+      </p>
+      
+    </li>
+    
 
     <li class="entry">
             <h2> 20260211 - Finally Martins 2D Remeshing is Working!!! !!! </h2>
