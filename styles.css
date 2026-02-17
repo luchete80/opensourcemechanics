@@ -56,7 +56,9 @@ nav ul li {
   /* clear:both; */
 /* } */
 /* FONT DOES NOT WORK */ 
-.main-content {
+.main-content,
+entry-list,
+entry {
   font-family: mytwcent;
     grid-area:main-content;
     background:#111728;
