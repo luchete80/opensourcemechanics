@@ -6,7 +6,7 @@
 
 
 body {
-  background: #111827;
+  background: #ffffff;
   color:#f2f4f6;
   font-family: mytwcent;
   src: url(Ubuntu-L.ttf);
@@ -69,7 +69,7 @@ main-content {
   float: left;
   width: calc(80% - 80px);
   min-height: 50px;
-  background: #111827;
+  background: #ffffff;
   padding: 40px;
   
 }
