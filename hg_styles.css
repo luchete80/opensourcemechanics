@@ -31,7 +31,8 @@
 .holy-grail-grid > .main-content {
   font-family: mytwcent;
     grid-area:main-content;
-    background:#fff;
+    background:#111728;
+    color:#f2f4f6;
 }
 .holy-grail-grid > .left-sidebar {
     grid-area:left-sidebar;
