@@ -54,6 +54,23 @@
       
       <ul class="entrylist" id='list'> 
 
+
+    <li class="entry">
+            <h2> 20260310 - Remap Improvement Goodbye Numerical drifting!!! </h2>
+            #FEM #Forging #Explicit #Quad #2D #Remapping #Martins #Remeshing
+            <p>
+            Up until now, remapping of element fields was performed using the nearest element. <br>
+            With this approximation, numerical drifting could be observed. For example, in a plane strain compression test,<br>
+            the maximum values gradually move upward in the domain. <br>
+            This effect was not observed in 3D because the MMG remesher preserves the mesh for a relatively long time. <br>
+            In contrast, the custom remesher starts from a structured mesh generated from the bottom up, which causes this drifting.
+            </p>
+      <p>
+              <img src="images/20260310_1.png" height="400" >                            
+      </p>
+      
+    </li>
+
     <li class="entry">
             <h2> 20260218 - Quad Remeshing extremely improved !!! </h2>
             #FEM #Forging #Explicit #Quad #2D #Contact #Martins #Remeshing
