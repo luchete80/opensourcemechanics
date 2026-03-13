@@ -54,6 +54,36 @@
       
       <ul class="entrylist" id='list'> 
 
+    <li class="entry">
+            <h2> 20260313 - HUGE News!! Implicit u-p Solver is working!! </h2>
+            #FEM #Forging #Implicit #Quad #2D 
+            <p>
+              The implicit mixed u–p Selective Reduced Interation quasi-static formulation with contact is now operational in 2D axisymmetric form.
+
+              This completes the implementation of both the explicit and implicit computational frameworks for this class of problems.<br>
+
+              The implicit approach is commonly used in industrial forming software such as DEFORM and Forge. In this implementation, it provides a complementary methodology to the explicit solver, particularly for:<br>
+
+              Load and deformation verification.<br>
+
+              Quasi-static analyses where explicit time integration becomes computationally expensive.<br>
+
+              At this stage, the nonlinear system is solved using a successive iteration scheme.<br>
+
+              As a next step, a Newton–Raphson procedure will be introduced to improve convergence behavior, while preserving the current formulation as the baseline implementation.<br>
+
+              Some limitations were observed in the friction model due to a simplification in the contact formulation (see figure). <br>
+              The same issue was previously encountered in the explicit solver and was resolved by incorporating the history of tangential displacements.<br>
+                            
+            </p>
+      <p>
+              <img src="images/20260313_1.png" height="200" >                            
+      </p>
+      
+    </li>
+    
+    
+    
 
     <li class="entry">
             <h2> 20260310 - Remap Improvement Goodbye Numerical drifting!!! </h2>
