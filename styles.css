@@ -3,12 +3,18 @@
   /* padding: 0px; */
 /* } */
 
-
+<link rel="stylesheet" href="styles.css?v=2">
 
 body {
   background: #111728;
   font-family: mytwcent;
   src: url(Ubuntu-L.ttf);
+}
+
+
+.main-content {
+  max-width: 900px;
+  margin: auto;
 }
 
 #container{
