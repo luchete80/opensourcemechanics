@@ -130,3 +130,19 @@ entry {
 .navbar + .content {
   padding-top: 102px;
 }
+
+a:link {
+  color: #7ec8e3;   /* teal claro */
+}
+
+a:visited {
+  color: #b39ddb;   /* violeta suave */
+}
+
+a:hover {
+  color: #ffd54f;   /* amber al pasar el mouse */
+}
+
+a:active {
+  color: #ffb300;
+}
