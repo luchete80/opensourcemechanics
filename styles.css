@@ -8,6 +8,7 @@
 body {
   background: #111728;
   font-family: mytwcent;
+  margin:0;
   src: url(Ubuntu-L.ttf);
 }
 
