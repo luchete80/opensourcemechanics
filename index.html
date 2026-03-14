@@ -1,27 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>OpenSource Mechanics</title>
-<link rel="stylesheet" href="style.css">
+<title> OPEN SOURCE MECHANICS </title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hg_styles.css" />
+<link rel="stylesheet" href="tag_cloud_styles.css" />
 </head>
 
-<body>
+<body onload="checkCookies()">
 
-<h1>OpenSource Mechanics</h1>
+<header>
+<h1>
+<img alt="button" border="0" width="600" height="150" src="title.png" align="center"/>
+</h1>
+
+<nav class="navbar" align="center">
+<ul>
+
+<li>
+<a href="blog.html">
+<img alt="button" border="0" width="75" height="35" src="buttons/button_blog.png"/>
+</a>
+</li>
+
+<li>
+<a href="subscribe.html">
+<img alt="button" border="0" width="150" height="35" src="buttons/button_subs.png"/>
+</a>
+</li>
+
+<li>
+<a href="links.html">
+<img alt="button" border="0" width="100" height="35" src="buttons/button_links.png"/>
+</a>
+</li>
+
+<li>
+<a href="test_py.html">
+<img alt="button" border="0" width="100" height="35" src="buttons/button_links.png"/>
+</a>
+</li>
+
+</ul>
+</nav>
+
+</header>
+
+
+<div class="holy-grail-grid">
+
+
+<main class="main-content">
+
+<h2>Computational Mechanics</h2>
 
 <p>
-Computational mechanics research and development focused on
-finite element methods and large deformation simulation.
+OpenSource Mechanics is a technical site dedicated to the study and development of
+numerical methods for large deformation simulation.
 </p>
+
+<p>
+Topics covered include:
+</p>
+
+<ul>
+<li>Finite Element Methods</li>
+<li>Large deformation simulation</li>
+<li>Metal forming processes</li>
+<li>GPU accelerated solvers</li>
+<li>Explicit and implicit formulations</li>
+</ul>
+
+
+<h2>Projects</h2>
+
+<ul>
+<li>Explicit FEM solver (CPU / GPU)</li>
+<li>Implicit viscoplastic forming solver</li>
+<li>Remeshing techniques for forming simulation</li>
+</ul>
+
+
+<h2>Technical Blog</h2>
+
+<p>
+Development notes, research experiments and implementation details are published
+in the technical blog.
+</p>
+
+<p>
+<a href="blog.html">Go to the Blog</a>
+</p>
+
+
+</main>
+
+
+
+<section class="left-sidebar">
+<h3>Contents</h3>
+
+<ul>
+<li>Finite Element Methods</li>
+<li>Metal Forming Simulation</li>
+<li>GPU Computing</li>
+<li>Remeshing Algorithms</li>
+</ul>
+
+</section>
+
+
+<aside class="right-sidebar">
 
 <h2>Links</h2>
 
 <ul>
-<li><a href="blog.html">Technical Blog</a></li>
 <li><a href="https://github.com/luchete80">GitHub</a></li>
-<li><a href="https://youtube.com/">YouTube</a></li>
+<li><a href="https://www.youtube.com/">YouTube</a></li>
+<li><a href="blog.html">Technical Blog</a></li>
 </ul>
 
+</aside>
+
+
+<footer class="footer">
+OpenSource Mechanics
+</footer>
+
+</div>
+
+
+<script src="./sticky.js"></script>
+
 </body>
+
+<script>
+function checkCookies() {
+}
+</script>
+
 </html>
