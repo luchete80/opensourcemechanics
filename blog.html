@@ -54,6 +54,69 @@
       
       <ul class="entrylist" id='list'> 
 
+
+    <li class="entry">
+        <h2> 20260320 - Implicit u-p Solver, first tests </h2>
+            #FEM #Forging #Implicit #Quad #2D 
+
+        <p>
+        I’ve recently integrated remeshing into my Updated Lagrangian U–P SRI (Selective Reduced Integration) formulation with Picard iteration for viscoplastic flow governed by a Hollomon hardening law.
+        </p>
+
+        <p>
+        This marks a significant step in the development of my implicit FEM solver, especially for large deformation problems such as forging simulations.
+        </p>
+
+        <p>
+        After implementing the remeshing pipeline, I ran a series of benchmark comparisons against industrial-grade software. The results are encouraging:
+        </p>
+
+        <ul>
+          <li>The load–displacement curves match very closely with reference solutions</li>
+          <li>The deformation patterns and field distributions are in strong agreement</li>
+          <li>The overall numerical behavior remains stable through large strains</li>
+          <li>The remeshing does not introduce noticeable artifacts in the solution when properly transferred</li>
+        </ul>
+
+        <p>
+        The remeshing strategy allows the solver to maintain mesh quality during severe deformation, which is essential for robustness in Updated Lagrangian formulations. Combined with the U–P approach and SRI, this helps mitigate volumetric locking while preserving accuracy in nearly incompressible regimes.
+        </p>
+
+        <p>
+        From a practical standpoint, this improves the solver’s capability to handle realistic forming processes where mesh distortion would otherwise lead to divergence or loss of accuracy.
+        </p>
+
+        <p>
+        This implementation is still based on a Picard iteration framework, which is simpler but less efficient than a full Newton–Raphson scheme. However, the current results confirm that the overall numerical formulation is consistent and physically reliable, which is a key milestone before moving toward a more robust nonlinear solver.
+        </p>
+
+        <p><strong>Next steps include:</strong></p>
+
+        <ul>
+          <li>Improving convergence behavior of the nonlinear iterations</li>
+          <li>Transitioning from Picard to a Newton-based + Line Search implicit scheme</li>
+          <li>Further validation against a broader set of industrial benchmarks</li>
+          <li>Enhancing the remeshing transfer accuracy for internal variables</li>
+          <li>Add Norton-Hoff & Johnson Cook material models</li>
+        </ul>
+
+        <p>
+        This work is part of the broader OpenSource Mechanics effort focused on building and understanding industrial-grade finite element solvers from the ground up.
+        </p>
+
+        <p>
+        If you’re interested in FEM development, solver architecture, or large deformation mechanics, this series will continue to dive deeper into the implementation details.
+        </p>
+
+      </p>
+              <img src="images/20260320_remesh_implicit.gif" height="400" ><br>
+              <img src="images/20260320_1.png"    height="300" >
+              <img src="images/20260320_2.png"     height="300" >                                     
+      </p>
+      
+    </li>
+    
+    
     <li class="entry">
             <h2> 20260313 - HUGE News!! Implicit u-p Solver is working!! </h2>
             #FEM #Forging #Implicit #Quad #2D 
