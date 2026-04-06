@@ -54,6 +54,51 @@
       
       <ul class="entrylist" id='list'> 
 
+      <li class="entry">
+          <h2> 20260406 - When More Contact Stiffness Makes Things Worse </h2>
+              #FEM #Contact #Implicit #Nonlinear #SolverDev 
+
+          <p>
+          I increased contact stiffness in my implicit velocity based FEM solver… and penetration got worse.
+          </p>
+
+          <p><strong>What I tested:</strong></p>
+
+          <ul>
+            <li><strong>Case 1:</strong> Velocity penalty = 5.0, Gap penalty = 0.01 → velocity dominated, poor convergence</li>
+            <li><strong>Case 2:</strong> Velocity penalty = 5.0, Gap penalty = 0.05 → almost no change</li>
+            <li><strong>Case 3:</strong> Velocity penalty = 0.1, Gap penalty = 1.0 → stable convergence, lower penetration</li>
+          </ul>
+
+          <p>
+          The issue wasn’t just stiffness.
+          </p>
+
+          <p>
+          The velocity term was <strong>masking</strong> the gap enforcement. Even increasing the gap penalty had little effect because velocity forces were dominating the system.
+          </p>
+
+          <p>
+          Once I reduced velocity stiffness, two things happened:
+          </p>
+
+          <ul>
+            <li>Better numerical conditioning</li>
+            <li>Gap enforcement became effective</li>
+          </ul>
+
+          <p>
+          This not only improved convergence, but also allowed the solver to handle more demanding nonlinear systems and more complex geometries.
+          <strong>Takeaway:</strong><br>
+          Sometimes, reducing stiffness leads to better results.
+          </p>
+
+      <p>
+              <img src="images/20260406_1.png"     height="600" >                                     
+      </p>
+      
+      </li>
+
 
     <li class="entry">
         <h2> 20260320 - Implicit u-p Solver, first tests </h2>
