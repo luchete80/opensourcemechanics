@@ -146,6 +146,18 @@ a:hover {
     text-align: center;
 }
 
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./fonts/Ubuntu-L.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+} 
+
+
+body {
+    color: #F2F4F6;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -187,14 +199,12 @@ a:hover {
     font-weight: 600;
     font-size: 14px;
 
-    background: red !important;
-    color: white !important;
-    
+    color: #E6EDF3;
     text-decoration: none;
 
     padding: 8px 14px;
 
-
+    background: #111B2E;
     border: 1px solid #243244;
     border-radius: 6px;
 
