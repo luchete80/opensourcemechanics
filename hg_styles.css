@@ -1,58 +1,156 @@
-/* grid container */
+/* =========================
+   BASE / GRID
+========================= */
+
 .holy-grail-grid {
-    display:grid;
+    display: grid;
     grid-template-areas:
         'header'
         'main-content'
         'left-sidebar'
         'right-sidebar'
         'footer';
+    background: #0B1220;
 }
 
-/* general column padding */
+/* spacing */
 .holy-grail-grid > * {
-    padding:1rem;
+    padding: 1rem;
 }
 
-/* assign columns to grid areas */
-.holy-grail-grid > .header {
-    grid-area:header;
-		margin: 0;
-		height:50px;
-		background:#111728;
-		/* position:fixed; */
+/* =========================
+   HEADER (TITLE + NAVBAR)
+========================= */
+
+header {
+    grid-area: header;
+    background: #0B1220;
+    margin: 0;
+    border-bottom: 1px solid #243244;
 }
+
+/* navbar */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navbar a img {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar a img:hover {
+    transform: translateY(-2px);
+    opacity: 0.85;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
 
 @font-face {
-  font-family: mytwcent;
-  src: url(Ubuntu-L.ttf);
+    font-family: mytwcent;
+    src: url(Ubuntu-L.ttf);
 }
+
+body {
+    margin: 0;
+    font-family: mytwcent;
+    background: #0B1220;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
 
 .holy-grail-grid > .main-content {
-  font-family: mytwcent;
-    grid-area:main-content;
-    background:#111728;
-    color:#f2f4f6;
-}
-.holy-grail-grid > .left-sidebar {
-    grid-area:left-sidebar;
-    background:#f5d55f;
-}
-.holy-grail-grid > .right-sidebar {
-    grid-area:right-sidebar;
-    background:#c5ed77;
-		line-height: 1.0;
-		margin: 0;
-		header: 0;
-		float: right;
-}
-.holy-grail-grid > .footer {
-    grid-area:footer;
-    background:#72c2f1;
+    grid-area: main-content;
+    background: #0B1220;
+    color: #E6EDF3;
+    line-height: 1.6;
 }
 
-/* tablet breakpoint */
-@media (min-width:768px) {
+h1, h2, h3 {
+    color: #E6EDF3;
+}
+
+p, li {
+    color: #C9D4E0;
+}
+
+/* links */
+a {
+    color: #2DD4BF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F59E0B;
+}
+
+/* =========================
+   SIDEBARS
+========================= */
+
+.holy-grail-grid > .left-sidebar {
+    grid-area: left-sidebar;
+    background: #111B2E;
+    color: #E6EDF3;
+    border-right: 1px solid #243244;
+}
+
+.holy-grail-grid > .right-sidebar {
+    grid-area: right-sidebar;
+    background: #111B2E;
+    color: #E6EDF3;
+    border-left: 1px solid #243244;
+}
+
+/* =========================
+   TAG CLOUD (si lo usas)
+========================= */
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-cloud a {
+    background: #111B2E;
+    border: 1px solid #243244;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #C9D4E0;
+}
+
+.tag-cloud a:hover {
+    background: #2DD4BF;
+    color: #0B1220;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.holy-grail-grid > .footer {
+    grid-area: footer;
+    background: #0B1220;
+    color: #9CA3AF;
+    border-top: 1px solid #243244;
+    text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 768px) {
     .holy-grail-grid {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -63,14 +161,12 @@
     }
 }
 
-/* desktop breakpoint */
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     .holy-grail-grid {
-        /* grid-template-columns: repeat(4, 1fr); */
-        grid-template-columns: 150px auto 100px 250px;
+        grid-template-columns: 200px auto 200px;
         grid-template-areas:
-            'header header header header'
-            'left-sidebar main-content main-content right-sidebar'
-            'footer footer footer footer';
+            'header header header'
+            'left-sidebar main-content right-sidebar'
+            'footer footer footer';
     }
 }
