@@ -187,12 +187,14 @@ a:hover {
     font-weight: 600;
     font-size: 14px;
 
-    color: #E6EDF3;
+    background: red !important;
+    color: white !important;
+    
     text-decoration: none;
 
     padding: 8px 14px;
 
-    background: #111B2E;
+
     border: 1px solid #243244;
     border-radius: 6px;
 
