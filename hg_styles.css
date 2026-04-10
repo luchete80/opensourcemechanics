@@ -170,3 +170,51 @@ a:hover {
             'footer footer footer';
     }
 }
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* base button */
+.nav-btn {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #E6EDF3;
+    text-decoration: none;
+
+    padding: 8px 14px;
+
+    background: #111B2E;
+    border: 1px solid #243244;
+    border-radius: 6px;
+
+    transition: all 0.2s ease;
+}
+
+/* hover */
+.nav-btn:hover {
+    background: #2DD4BF;
+    color: #0B1220;
+    border-color: #2DD4BF;
+    transform: translateY(-1px);
+}
+
+/* CTA button */
+.nav-btn.primary {
+    background: #F59E0B;
+    color: #0B1220;
+    border-color: #F59E0B;
+}
+
+.nav-btn.primary:hover {
+    background: #ffb020;
+    border-color: #ffb020;
+}
