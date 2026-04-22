@@ -54,6 +54,48 @@
       <ul class="entrylist" id='list'> 
 
       <li class="entry">
+          <h2>20260422 - My FEM GUI Is Finally Becoming Usable</h2>
+          #FEM #GUI #CAE #Cplusplus #SolverDev #OpenSource
+
+          <p>
+          In the last two weeks, I focused on one thing: reducing friction between model and results.
+          </p>
+
+          <p>
+          This update moves my FEM solver from a developer tool toward something you can actually use.
+          </p>
+
+          <p><strong>What’s new:</strong></p>
+
+          <ul>
+            <li>Run directly from the model, without separate job setup</li>
+            <li>Built-in demo for faster testing and workflow exploration</li>
+            <li>Progress bars for both simulation run and results loading</li>
+            <li>Live job log with cleaner output and reduced visible lines</li>
+            <li>Load plots integrated with ImPlot</li>
+            <li>Explicit and implicit step definition from the GUI</li>
+            <li>Automatic input file generation from the model</li>
+            <li>Custom quad mesher integration instead of Gmsh</li>
+            <li>Improved visualization with nodes, vectors, and manual/auto color scaling</li>
+          </ul>
+
+          <p>
+          The goal of these changes is simple: make it possible to go from opening the GUI to running a simulation and visualizing results in seconds.
+          </p>
+
+          <p>
+          A demo binary is the next step. I am currently packaging and testing it.
+          </p>
+
+          <p>
+              <img src="images/20260422_1.png" height="300">
+              <img src="images/20260422_2.png" height="300">
+              <img src="images/20260422_3.png" height="300">
+              <img src="images/20260422_4.png" height="300">
+          </p>
+      </li>
+
+      <li class="entry">
           <h2> 20260406 - When More Contact Stiffness Makes Things Worse </h2>
               #FEM #Contact #Implicit #Nonlinear #SolverDev 
 
