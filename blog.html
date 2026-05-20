@@ -53,6 +53,58 @@
       
       <ul class="entrylist" id='list'> 
 
+<li class="entry">
+      <h2>20260520 - Version 0.0.8: Full Workflow Scripting Support</h2>
+      #FEM #GUI #CAE #Python #Cplusplus #Scripting #Automation #OpenSource #Radioss #SolverDev
+
+      <p>
+      Version 0.0.8 expands scripting across the full model-building workflow. It is now possible to
+  create and assemble an entire model from Python, covering geometry import, model creation, extrusion-
+  based generation, loads workflow setup, and solver preparation directly from scripts.
+      </p>
+
+      <p>
+      This release pushes the GUI toward a true visual + scripted CAE workflow: build interactively when
+  needed, automate everything when repetition, parametrization, or reproducibility matter.
+      </p>
+
+      <p><strong>New in this version:</strong></p>
+
+      <ul>
+        <li>Added scripting for the entire load model workflow</li>
+        <li>Added script actions to import part STEP geometry</li>
+        <li>Added extrusion scripts</li>
+        <li>Added model creation from script with tree update</li>
+        <li>Fixed scripted geometry creation so new geometry is immediately visible</li>
+        <li>Added scripts to recent files</li>
+        <li>Added Energy Plot dialog for the implicit solver</li>
+        <li>Added highlighted parts in the GUI</li>
+        <li>Fixed element IDs display</li>
+        <li>Began integrating the new Model Checker</li>
+        <li>Fixed remaining boundary condition symbols after closing a model</li>
+        <li>Improved Radioss output with <code>/ANALY</code> support and 2D <code>/QUAD</code> export
+  instead of shell output</li>
+      </ul>
+
+      <p><strong>This enables:</strong></p>
+
+      <ul>
+        <li>Programmatic creation of complete simulation models</li>
+        <li>Reproducible preprocessing pipelines</li>
+        <li>Cleaner automation for repetitive CAE workflows</li>
+        <li>A better path toward multi-solver exporters and model validation</li>
+      </ul>
+
+      <p>
+      Build the model in the GUI. Rebuild it from script. Run the same workflow again with confidence.
+      </p>
+
+      <p>
+          <img src="images/20260520_1.gif" height="400">
+      </p>
+  </li>
+
+
       <li class="entry">
           <h2>20260504 - GUI New Feature: Abaqus Export via Python & Model Sets</h2>
           #FEM #GUI #CAE #Abaqus #Python #Cplusplus #SolverDev #OpenSource
