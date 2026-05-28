@@ -53,6 +53,77 @@
       
       <ul class="entrylist" id='list'> 
 
+
+<li class="entry">
+  <h2>20260528 - GUI & Solvers Update: Time Functions, Energy Visualization, and First OpenRadioss Python Exporter</h2>
+
+  #FEM #GUI #CAE #ImplicitSolver #ExplicitSolver #MetalForming #OpenSource #Cplusplus #OpenRadioss #Simulation #NonlinearFEM #SolverDev
+
+  <p>
+    This update adds time-dependent functions for boundary conditions and solver controls,
+    together with improved energy computation, visualization tools, and the first working
+    Python-based OpenRadioss exporter integrated directly into WeldForm GUI.
+  </p>
+
+  <p>
+    Boundary conditions can now be defined using functions of time directly from the GUI,
+    allowing smoother and more realistic loading paths for forming simulations, displacement
+    ramps, velocity-controlled problems, and solver parameter evolution.
+  </p>
+
+  <p>
+    In addition, the internal energy and external work calculations were corrected and can now
+    be visualized directly through integrated energy plots during postprocessing.
+  </p>
+
+  <p>
+    This version also introduces the first working Python OpenRadioss exporter running directly
+    from the GUI workflow, moving WeldForm closer to a multi-solver CAE environment.
+  </p>
+
+  <p>
+    <img src="images/20260528_1.png" height="500">
+    <img src="images/20260528_2.png" height="500">
+  </p>
+  
+  
+  <p><strong>New :</strong></p>
+
+  <ul>
+    <li>Added time-dependent amplitude functions for boundary conditions</li>
+    <li>Added graphical editing of amplitude curves directly inside the GUI</li>
+    <li>Added support for function-based solver parameter evolution</li>
+    <li>Corrected internal energy computation</li>
+    <li>Corrected external work calculation</li>
+    <li>Added visualization of energy evolution curves</li>
+    <li>Added the first Python-based OpenRadioss exporter integrated into the GUI workflow</li>
+    <li>Improved postprocessing workflow for implicit and explicit simulations</li>
+    <li>Improved handling of nonlinear loading histories</li>
+  </ul>
+
+  <p><strong>This enables:</strong></p>
+
+  <ul>
+    <li>Smoother and more realistic load application</li>
+    <li>Better control of nonlinear simulation workflows</li>
+    <li>Improved validation of solver energy balance</li>
+    <li>Clearer analysis of simulation stability and convergence behavior</li>
+    <li>A first step toward integrated multi-solver workflows</li>
+    <li>More robust workflows for large deformation simulations</li>
+  </ul>
+
+  <p>
+    Time-dependent loading is essential for many nonlinear FEM problems.
+    With integrated function editors, energy visualization, and OpenRadioss export support,
+    the workflow becomes closer to industrial CAE environments while remaining lightweight
+    and open.
+  </p>
+
+</li>
+
+
+
+
 <li class="entry">
       <h2>20260520 - Version 0.0.8: Full Workflow Scripting Support</h2>
       #FEM #GUI #CAE #Python #Cplusplus #Scripting #Automation #OpenSource #Radioss #SolverDev
