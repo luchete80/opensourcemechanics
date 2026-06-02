@@ -64,11 +64,6 @@ Its 2D remeshing workflow follows the remeshing strategy described in Paulo Mart
   <p>
 For 3D simulations, the remeshing workflow is based on MMG.
   </p>
-  <div class="citation-block">
-    <p><strong>References related to the explicit remeshing line</strong></p>
-    <p>Nielsen and Martins, <em>Metal Forming: Formability, Simulation, Tool Design</em>.</p>
-    <p>Paulo Martins, metal forming reference in Portuguese.</p>
-  </div>
   <p>
 The GitHub link below points to a reduced public version of this explicit solver line.
   </p>
@@ -85,6 +80,10 @@ For slow forging workflows, the implicit formulation is usually the most common 
   <p>
 In the upsetting/compression benchmark, the 2D formulation uses a mixed U-P approach with selective reduced integration, following the Paulo Martins scheme used in metal forming simulations.
   </p>
+  <div class="citation-block">
+    <p><strong>Reference related to the general implicit rigid-viscoplastic formulation</strong></p>
+    <p>Nielsen and Martins, <em>Metal Forming: Formability, Simulation, Tool Design</em>.</p>
+  </div>
   <p>
 For the 3D model, the implementation does not rely on hexahedra as described in Martins' book. Instead, it follows the MINI element methodology with bubble enrichment for mixed formulations.
   </p>
