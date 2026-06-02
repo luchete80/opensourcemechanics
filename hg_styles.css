@@ -230,3 +230,41 @@ body {
     background: #ffb020;
     border-color: #ffb020;
 }
+
+.publication-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.publication-item {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #243244;
+}
+
+.publication-item h3 {
+    margin-bottom: 0.35rem;
+}
+
+.publication-meta {
+    color: #9CA3AF;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.publication-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0.65rem 0 0;
+}
+
+.publication-tags span {
+    background: #111B2E;
+    border: 1px solid #243244;
+    border-radius: 4px;
+    color: #C9D4E0;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.5rem;
+}
