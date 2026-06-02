@@ -59,6 +59,9 @@ WeldFormFEM is the main finite element solver line for large deformation mechani
 The implicit branch is currently being used for quasi-static large-deformation forming benchmarks, including upsetting/compression and extrusion-style validation cases where contact stability, pressure behavior, and mesh robustness are critical.
   </p>
   <p>
+For slow forging workflows, the implicit formulation is usually the most common choice. In this project, that line is the main path for quasi-static metal forming studies.
+  </p>
+  <p>
 In the upsetting/compression benchmark, the 2D formulation uses a mixed U-P approach with selective reduced integration, following the Paulo Martins scheme used in metal forming simulations.
   </p>
   <div class="citation-block">
@@ -91,7 +94,8 @@ The quantitative comparison table and benchmark-specific error metrics are repor
 
 <section class="case-section">
   <h3>Project links</h3>
-  <p><a href="https://github.com/luchete80/WeldFormFEM">GitHub repository</a></p>
+  <p><a href="https://github.com/luchete80/WeldFormFEM">GitHub repository</a> - reduced public version of the explicit solver line.</p>
+  <p>The implicit version used for slow forging workflows is also available as a binary in the <a href="https://github.com/luchete80/WeldFormGUI">WeldFormGUI repository</a>.</p>
   <p><a href="benchmarks.html">Benchmark pages</a></p>
   <p><a href="blog.html">Development blog entries</a></p>
 </section>
