@@ -268,3 +268,135 @@ body {
     font-size: 0.85rem;
     padding: 0.2rem 0.5rem;
 }
+
+.benchmark-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.benchmark-card,
+.case-section {
+    background: #111B2E;
+    border: 1px solid #243244;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.benchmark-card h3,
+.case-section h3 {
+    margin-top: 0;
+}
+
+.benchmark-card p,
+.case-section p {
+    margin-bottom: 0.8rem;
+}
+
+.benchmark-card ul,
+.case-section ul {
+    padding-left: 1.2rem;
+}
+
+.case-image {
+    margin: 1.5rem 0;
+}
+
+.case-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #243244;
+}
+
+.case-image figcaption {
+    color: #9CA3AF;
+    font-size: 0.95rem;
+    margin-top: 0.6rem;
+}
+
+.case-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 1rem 0 1.4rem;
+}
+
+.case-meta span {
+    background: #111B2E;
+    border: 1px solid #243244;
+    border-radius: 999px;
+    color: #C9D4E0;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.7rem;
+}
+
+.case-nav {
+    margin: 1.5rem 0;
+}
+
+.case-nav a {
+    margin-right: 1rem;
+}
+
+.citation-block {
+    background: #0F172A;
+    border-left: 3px solid #2DD4BF;
+    padding: 1rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    background: #111B2E;
+    border: 1px solid #243244;
+}
+
+.results-table th,
+.results-table td {
+    border: 1px solid #243244;
+    padding: 0.8rem 0.9rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.results-table th {
+    background: #0F172A;
+    color: #E6EDF3;
+}
+
+.results-table td {
+    color: #C9D4E0;
+}
+
+.results-table .rmse-highlight {
+    color: #F59E0B;
+    font-weight: 700;
+}
+
+.project-link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.project-card {
+    background: #111B2E;
+    border: 1px solid #243244;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    margin-bottom: 0.75rem;
+}

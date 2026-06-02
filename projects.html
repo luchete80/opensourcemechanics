@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Projects | OPEN SOURCE MECHANICS </title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hg_styles.css" />
+<link rel="stylesheet" href="tag_cloud_styles.css" />
+</head>
+
+<body onload="checkCookies()">
+
+<header>
+<h1>
+<img alt="button" border="0" width="1000" height="150" src="title.png" align="center"/>
+</h1>
+
+<nav class="navbar">
+  <ul>
+    <li><a class="nav-btn" href="index.html">Home</a></li>
+    <li><a class="nav-btn primary" href="projects.html">Projects</a></li>
+    <li><a class="nav-btn" href="blog.html">Blog</a></li>
+    <li><a class="nav-btn" href="publications.html">Publications</a></li>
+    <li><a class="nav-btn" href="benchmarks.html">Benchmarks</a></li>
+    <li><a class="nav-btn" href="subscribe.html">Subscribe</a></li>
+    <li><a class="nav-btn" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</header>
+
+<div class="holy-grail-grid">
+
+<main class="main-content">
+
+<h2>Projects</h2>
+
+<p>
+This section groups the main tools and solver developments behind OpenSource Mechanics. Each project has its own page so capabilities, screenshots, validation links, and development direction can evolve independently.
+</p>
+
+<div class="project-link-grid">
+  <article class="project-card">
+    <h3><a href="project_weldformgui.html">WeldFormGUI</a></h3>
+    <p>Lightweight pre/post environment for FEM, SPH, and solver export workflows.</p>
+    <div class="publication-tags"><span>GUI</span><span>Pre/Post</span><span>Automation</span></div>
+  </article>
+
+  <article class="project-card">
+    <h3><a href="project_weldformfem.html">WeldFormFEM</a></h3>
+    <p>Finite element solver line focused on large deformation, contact, GPU workflows, and remeshing.</p>
+    <div class="publication-tags"><span>FEM</span><span>CPU/GPU</span><span>Large Deformation</span></div>
+  </article>
+
+  <article class="project-card">
+    <h3><a href="project_weldformsph.html">WeldFormSPH</a></h3>
+    <p>Smoothed Particle Hydrodynamics solver for solid mechanics and severe-deformation processes.</p>
+    <div class="publication-tags"><span>SPH</span><span>Particles</span><span>Metal Forming</span></div>
+  </article>
+
+  <article class="project-card">
+    <h3><a href="project_redynela.html">ReDynELA</a></h3>
+    <p>Adaptive-remeshing-oriented FEM workbench used as a reference line for distortion control studies.</p>
+    <div class="publication-tags"><span>FEM</span><span>Remeshing</span><span>Research</span></div>
+  </article>
+ </div>
+
+</main>
+
+<section class="left-sidebar">
+<h3>Main Tools</h3>
+
+<ul>
+<li>WeldFormGUI</li>
+<li>WeldFormFEM</li>
+<li>WeldFormSPH</li>
+<li>ReDynELA</li>
+</ul>
+
+</section>
+
+<aside class="right-sidebar">
+
+<h2>Why separate pages</h2>
+
+<p>
+Project pages make it easier to link benchmarks, publications, solver notes, and GitHub repositories without mixing all tool descriptions into one long page.
+</p>
+
+</aside>
+
+<footer class="footer">
+OpenSource Mechanics
+</footer>
+
+</div>
+
+<script src="./sticky.js"></script>
+
+</body>
+
+<script>
+function checkCookies() {
+}
+</script>
+
+</html>

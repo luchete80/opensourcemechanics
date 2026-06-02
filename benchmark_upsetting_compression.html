@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Upsetting Compression Benchmark | OPEN SOURCE MECHANICS </title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hg_styles.css" />
+<link rel="stylesheet" href="tag_cloud_styles.css" />
+</head>
+
+<body onload="checkCookies()">
+
+<header>
+<h1>
+<img alt="button" border="0" width="1000" height="150" src="title.png" align="center"/>
+</h1>
+
+<nav class="navbar">
+  <ul>
+    <li><a class="nav-btn" href="index.html">Home</a></li>
+    <li><a class="nav-btn" href="projects.html">Projects</a></li>
+    <li><a class="nav-btn" href="blog.html">Blog</a></li>
+    <li><a class="nav-btn" href="publications.html">Publications</a></li>
+    <li><a class="nav-btn primary" href="benchmarks.html">Benchmarks</a></li>
+    <li><a class="nav-btn" href="subscribe.html">Subscribe</a></li>
+    <li><a class="nav-btn" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</header>
+
+<div class="holy-grail-grid">
+
+<main class="main-content">
+
+<h2>Validation Case: Upsetting / Compression</h2>
+
+<div class="case-meta">
+  <span>Metal Forming</span>
+  <span>Compression</span>
+  <span>Axisymmetric</span>
+  <span>Validation Case</span>
+</div>
+
+<p>
+This case is intended to validate bulk compression under large plastic deformation, with special attention to contact pressure evolution, load-displacement response, and the strain field that develops during barreling.
+</p>
+
+<figure class="case-image">
+  <img src="images/benchmarks/01_compression.png" alt="Compression benchmark collage with force curve, deformed geometry, and comparison contours." />
+  <figcaption>
+    Current compression benchmark collage combining force response, deformed shape, and qualitative field comparison.
+  </figcaption>
+</figure>
+
+<section class="case-section">
+  <h3>What this benchmark checks</h3>
+  <ul>
+    <li>Force evolution during upsetting</li>
+    <li>Contact stability under large flattening</li>
+    <li>Barreling and free-surface flow</li>
+    <li>Plastic strain and pressure distribution trends</li>
+  </ul>
+</section>
+
+<section class="case-section">
+  <h3>Notes for this page</h3>
+  <p>
+This is a good first validation case because it is simple enough to interpret, but still exposes common failure modes: noisy contact forces, excessive distortion, unstable integration, and poor pressure transfer near the die interface.
+  </p>
+  <p>
+The current image already contains the right ingredients. For a stronger validation figure, it would help to crop the empty margins, unify the labels in one language, increase the force-curve contrast, and add panel letters so the reader can map each subplot to the discussion.
+  </p>
+  <p>
+Note: The 3D benchmark was intentionally performed using a very coarse tetrahedral mesh of about 3,000 elements to keep computational cost low for educational and demonstration purposes. Despite the coarse discretization, the overall load evolution remains in good agreement with Simufact Forming, with a relative RMSE below 5%.
+  </p>
+  <p>
+The detailed formulation notes, mesh strategy, and quantitative comparison table for the implicit implementation are documented in <a href="project_weldformfem.html">WeldFormFEM</a>, since this benchmark is one of the validation cases used for that solver line.
+  </p>
+</section>
+
+<section class="case-section">
+  <h3>Mesh notes</h3>
+  <p>
+The 3D compression case starts from an initial mesh of 700 nodes and 2950 elements.
+  </p>
+  <p>
+That mesh density corresponds to the 3D model.
+  </p>
+  <p>
+For the 2D model, an approximate element size of 0.5 mm is used.
+  </p>
+  <p>
+During remeshing, the objective is to preserve the original mesh density as much as possible instead of progressively refining or coarsening the model.
+  </p>
+</section>
+
+<section class="case-section">
+  <h3>Benchmark results</h3>
+  <table class="results-table">
+    <thead>
+      <tr>
+        <th>Benchmark</th>
+        <th>Relative RMSE [%]</th>
+        <th>Peak Load Error [%]</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2D Implicit Mixed U-P + SRI vs Simufact</td>
+        <td class="rmse-highlight">4.14</td>
+        <td>4.00</td>
+      </tr>
+      <tr>
+        <td>3D Implicit Mixed U-P (3k Elem) vs Simufact</td>
+        <td class="rmse-highlight">4.57</td>
+        <td>15.82</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<p class="case-nav">
+  <a href="benchmarks.html">Back to benchmarks</a>
+  <a href="benchmark_direct_extrusion.html">Next case: Direct extrusion</a>
+</p>
+
+</main>
+
+<section class="left-sidebar">
+<h3>Focus</h3>
+
+<ul>
+<li>Load curve</li>
+<li>Plastic strain field</li>
+<li>Pressure field</li>
+<li>Contact robustness</li>
+</ul>
+
+</section>
+
+<aside class="right-sidebar">
+
+<h2>Suggested Additions</h2>
+
+<p>
+Useful follow-ups for this page are the billet dimensions, friction law, material model, and whether the comparison is against experiment, QForm, Simufact, or an in-house implicit solution.
+</p>
+
+</aside>
+
+<footer class="footer">
+OpenSource Mechanics
+</footer>
+
+</div>
+
+<script src="./sticky.js"></script>
+
+</body>
+
+<script>
+function checkCookies() {
+}
+</script>
+
+</html>

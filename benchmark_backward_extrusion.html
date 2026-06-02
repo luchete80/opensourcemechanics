@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Backward Extrusion Benchmark | OPEN SOURCE MECHANICS </title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hg_styles.css" />
+<link rel="stylesheet" href="tag_cloud_styles.css" />
+</head>
+
+<body onload="checkCookies()">
+
+<header>
+<h1>
+<img alt="button" border="0" width="1000" height="150" src="title.png" align="center"/>
+</h1>
+
+<nav class="navbar">
+  <ul>
+    <li><a class="nav-btn" href="index.html">Home</a></li>
+    <li><a class="nav-btn" href="projects.html">Projects</a></li>
+    <li><a class="nav-btn" href="blog.html">Blog</a></li>
+    <li><a class="nav-btn" href="publications.html">Publications</a></li>
+    <li><a class="nav-btn primary" href="benchmarks.html">Benchmarks</a></li>
+    <li><a class="nav-btn" href="subscribe.html">Subscribe</a></li>
+    <li><a class="nav-btn" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</header>
+
+<div class="holy-grail-grid">
+
+<main class="main-content">
+
+<h2>Validation Case: Backward Extrusion</h2>
+
+<div class="case-meta">
+  <span>Metal Forming</span>
+  <span>Backward Extrusion</span>
+  <span>Cold Forming</span>
+  <span>Multi-Stage</span>
+</div>
+
+<p>
+This case is reserved for a backward extrusion validation sequence with demanding contact and confined material flow. It is a strong benchmark for checking tool interaction, cavity filling, and deformation history across multiple forming stages.
+</p>
+
+<section class="case-section">
+  <h3>Reference paper</h3>
+  <div class="citation-block">
+    <p><strong><a href="https://www.researchgate.net/publication/396239844_The_Numerical_Study_on_the_Multi-Stage_Cold_Forming_Process_of_Hexalobular_Socket_Torx_Nuts">The Numerical Study on the Multi-Stage Cold Forming Process of Hexalobular Socket Torx Nuts</a></strong></p>
+    <p>Chih-Cheng Yang, Jian-Qing Lu, Hsiu Ying Tsai, Jhonel Cortez Andres</p>
+    <p>Department of Mechanical and Automation Engineering / Graduate School of Mechatronic Science and Technology, Taiwan Steel University, Taiwan</p>
+  </div>
+  <p>
+This paper will be the anchor reference for the backward extrusion case. Once you send the benchmark text, this page can be expanded with the stage-by-stage description, material data, forming loads, and geometry comparison.
+  </p>
+</section>
+
+<section class="case-section">
+  <h3>Model setup</h3>
+  <ul>
+    <li>The billet material is modeled with a Hollomon law.</li>
+    <li>Material parameters are A = 386.796 MPa and n = 0.154.</li>
+    <li>The plastic strain range used for the law is eps in [0, 0.65].</li>
+    <li>For strains above 0.65, the flow stress is assumed constant.</li>
+    <li>The benchmark is solved as a 2D axisymmetric model.</li>
+    <li>A maximum element size of 0.2 mm was used in the tested mesh.</li>
+  </ul>
+</section>
+
+<section class="case-section">
+  <h3>What this benchmark checks</h3>
+  <ul>
+    <li>Material backflow into the punch-controlled cavity</li>
+    <li>Load evolution through multiple stages</li>
+    <li>Severe contact with changing interface conditions</li>
+    <li>Geometric accuracy of the final cold-formed part</li>
+  </ul>
+</section>
+
+<p class="case-nav">
+  <a href="benchmarks.html">Back to benchmarks</a>
+  <a href="benchmark_closed_die_forging.html">Next case: Closed die forging</a>
+</p>
+
+</main>
+
+<section class="left-sidebar">
+<h3>Focus</h3>
+
+<ul>
+<li>Multi-stage sequence</li>
+<li>Cold forming loads</li>
+<li>Cavity filling</li>
+<li>Part geometry</li>
+</ul>
+
+</section>
+
+<aside class="right-sidebar">
+
+<h2>Status</h2>
+
+<p>
+The page structure and paper reference are in place. The detailed explanatory text can be added directly once you send it.
+</p>
+
+</aside>
+
+<footer class="footer">
+OpenSource Mechanics
+</footer>
+
+</div>
+
+<script src="./sticky.js"></script>
+
+</body>
+
+<script>
+function checkCookies() {
+}
+</script>
+
+</html>

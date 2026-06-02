@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Benchmarks | OPEN SOURCE MECHANICS </title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hg_styles.css" />
+<link rel="stylesheet" href="tag_cloud_styles.css" />
+</head>
+
+<body onload="checkCookies()">
+
+<header>
+<h1>
+<img alt="button" border="0" width="1000" height="150" src="title.png" align="center"/>
+</h1>
+
+<nav class="navbar">
+  <ul>
+    <li><a class="nav-btn" href="index.html">Home</a></li>
+    <li><a class="nav-btn" href="projects.html">Projects</a></li>
+    <li><a class="nav-btn" href="blog.html">Blog</a></li>
+    <li><a class="nav-btn" href="publications.html">Publications</a></li>
+    <li><a class="nav-btn primary" href="benchmarks.html">Benchmarks</a></li>
+    <li><a class="nav-btn" href="subscribe.html">Subscribe</a></li>
+    <li><a class="nav-btn" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</header>
+
+<div class="holy-grail-grid">
+
+<main class="main-content">
+
+<h2>Benchmarks and Validation Cases</h2>
+
+<p>
+This section is organized by specific validation case rather than by method family. Each page focuses on one benchmark, the reference problem setup, and the comparison targets used to evaluate the solver behavior.
+</p>
+
+<p>
+That makes it easier to compare formulations across FEM, SPH, or mixed approaches without hiding the actual forming process behind a broad category label.
+</p>
+
+<div class="benchmark-grid">
+  <article class="benchmark-card">
+    <h3><a href="benchmark_upsetting_compression.html">Upsetting / Compression</a></h3>
+    <p>Axisymmetric bulk compression used to compare force evolution, barreling, and plastic strain patterns.</p>
+    <div class="publication-tags"><span>Metal Forming</span><span>Compression</span><span>Validation</span></div>
+  </article>
+
+  <article class="benchmark-card">
+    <h3><a href="benchmark_direct_extrusion.html">Direct Extrusion</a></h3>
+    <p>Forward extrusion case for checking flow through the die, pressure levels, and steady-state shape prediction.</p>
+    <div class="publication-tags"><span>Metal Forming</span><span>Direct Extrusion</span><span>Benchmark</span></div>
+  </article>
+
+  <article class="benchmark-card">
+    <h3><a href="benchmark_backward_extrusion.html">Backward Extrusion</a></h3>
+    <p>Multi-stage cold forming reference case tied to the Torx nut study and suitable for contact-heavy validation.</p>
+    <div class="publication-tags"><span>Metal Forming</span><span>Backward Extrusion</span><span>Cold Forming</span></div>
+  </article>
+
+  <article class="benchmark-card">
+    <h3><a href="benchmark_closed_die_forging.html">Closed Die Forging</a></h3>
+    <p>Impression-die forging benchmark intended for validating filling, flash generation, and contact robustness.</p>
+    <div class="publication-tags"><span>Metal Forming</span><span>Closed Die Forging</span><span>Validation</span></div>
+  </article>
+</div>
+
+</main>
+
+<section class="left-sidebar">
+<h3>Current Cases</h3>
+
+<ul>
+<li>Upsetting / Compression</li>
+<li>Direct Extrusion</li>
+<li>Backward Extrusion</li>
+<li>Closed Die Forging</li>
+</ul>
+
+</section>
+
+<aside class="right-sidebar">
+
+<h2>Structure</h2>
+
+<p>
+Each benchmark has its own HTML page so figures, references, load curves, and solver notes can grow independently.
+</p>
+
+<p>
+If the section expands later, method tags such as FEM, SPH, or mixed U-P can still be used inside each case without changing the navigation model.
+</p>
+
+</aside>
+
+<footer class="footer">
+OpenSource Mechanics
+</footer>
+
+</div>
+
+<script src="./sticky.js"></script>
+
+</body>
+
+<script>
+function checkCookies() {
+}
+</script>
+
+</html>

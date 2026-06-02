@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> WeldFormFEM | OPEN SOURCE MECHANICS </title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hg_styles.css" />
+<link rel="stylesheet" href="tag_cloud_styles.css" />
+</head>
+
+<body onload="checkCookies()">
+
+<header>
+<h1>
+<img alt="button" border="0" width="1000" height="150" src="title.png" align="center"/>
+</h1>
+
+<nav class="navbar">
+  <ul>
+    <li><a class="nav-btn" href="index.html">Home</a></li>
+    <li><a class="nav-btn primary" href="projects.html">Projects</a></li>
+    <li><a class="nav-btn" href="blog.html">Blog</a></li>
+    <li><a class="nav-btn" href="publications.html">Publications</a></li>
+    <li><a class="nav-btn" href="benchmarks.html">Benchmarks</a></li>
+    <li><a class="nav-btn" href="subscribe.html">Subscribe</a></li>
+    <li><a class="nav-btn" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</header>
+
+<div class="holy-grail-grid">
+<main class="main-content">
+<h2>WeldFormFEM</h2>
+
+<div class="case-meta">
+  <span>FEM</span>
+  <span>CPU/GPU</span>
+  <span>Contact</span>
+  <span>Remeshing</span>
+</div>
+
+<p>
+WeldFormFEM is the main finite element solver line for large deformation mechanics, with ongoing work in explicit dynamics, implicit forming, contact stability, tetra and hexa support, and remeshing under severe distortion.
+</p>
+
+<section class="case-section">
+  <h3>Current focus</h3>
+  <ul>
+    <li>Large strain elastoplasticity</li>
+    <li>CPU/GPU solver consistency</li>
+    <li>Reduced integration and locking control</li>
+    <li>Contact algorithms for forming and compression</li>
+    <li>Remeshing workflows for distorted meshes</li>
+  </ul>
+</section>
+
+<section class="case-section">
+  <h3>Implicit forming line</h3>
+  <p>
+The implicit branch is currently being used for quasi-static large-deformation forming benchmarks, including upsetting/compression and extrusion-style validation cases where contact stability, pressure behavior, and mesh robustness are critical.
+  </p>
+  <p>
+In the upsetting/compression benchmark, the 2D formulation uses a mixed U-P approach with selective reduced integration, following the Paulo Martins scheme used in metal forming simulations.
+  </p>
+  <div class="citation-block">
+    <p><strong>References related to the Martins scheme</strong></p>
+    <p>Nielsen and Martins, <em>Metal Forming: Formability, Simulation, Tool Design</em>.</p>
+    <p>Paulo Martins, metal forming reference in Portuguese.</p>
+  </div>
+  <p>
+For the 3D model, the implementation does not rely on hexahedra as described in Martins' book. Instead, it follows the MINI element methodology with bubble enrichment for mixed formulations.
+  </p>
+  <div class="citation-block">
+    <p><strong>References related to the 3D MINI element methodology</strong></p>
+    <p>Arnold, Brezzi and Fortin, <em>A stable finite element for the Stokes equation</em>.</p>
+    <p>Andrea Cioncolini and Daniele Boffi, <em>The MINI mixed finite element for the Stokes problem: An experimental investigation</em>.</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <h3>Compression benchmark summary</h3>
+  <p>
+The 3D compression benchmark was intentionally performed using a very coarse tetrahedral mesh of about 3,000 elements to keep computational cost low for educational and demonstration purposes. Even with that coarse discretization, the overall load evolution remains in good agreement with Simufact Forming, with a relative RMSE below 5%.
+  </p>
+  <p>
+The 3D case starts from an initial mesh of 700 nodes and 2950 elements, while the 2D axisymmetric model uses an approximate element size of 0.5 mm. During remeshing, the target is to preserve the original mesh density as much as possible instead of drifting toward systematic refinement or coarsening.
+  </p>
+  <p>
+The quantitative comparison table and benchmark-specific error metrics are reported in the dedicated <a href="benchmark_upsetting_compression.html">Upsetting / Compression validation page</a>.
+  </p>
+</section>
+
+<section class="case-section">
+  <h3>Project links</h3>
+  <p><a href="https://github.com/luchete80/WeldFormFEM">GitHub repository</a></p>
+  <p><a href="benchmarks.html">Benchmark pages</a></p>
+  <p><a href="blog.html">Development blog entries</a></p>
+</section>
+
+<p class="case-nav">
+  <a href="projects.html">Back to projects</a>
+</p>
+</main>
+
+<section class="left-sidebar">
+<h3>Scope</h3>
+<ul>
+<li>Explicit FEM</li>
+<li>Implicit forming</li>
+<li>Large deformation</li>
+</ul>
+</section>
+
+<aside class="right-sidebar">
+<h2>Why it matters</h2>
+<p>
+This is the core solver project behind many of the compression, extrusion, and remeshing validation cases published on the site.
+</p>
+</aside>
+
+<footer class="footer">
+OpenSource Mechanics
+</footer>
+</div>
+
+<script src="./sticky.js"></script>
+</body>
+<script>
+function checkCookies() {
+}
+</script>
+</html>
