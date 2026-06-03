@@ -70,10 +70,9 @@ This is a good first validation case because it is simple enough to interpret, b
 The current image already contains the right ingredients. For a stronger validation figure, it would help to crop the empty margins, unify the labels in one language, increase the force-curve contrast, and add panel letters so the reader can map each subplot to the discussion.
   </p>
   <p>
-Note: The 3D benchmark was intentionally performed using a very coarse tetrahedral mesh of about 3,000 elements to keep computational cost low for educational and demonstration purposes. Despite the coarse discretization, the overall load evolution remains in good agreement with Simufact Forming, with a relative RMSE below 5%.
-  </p>
+The detailed formulation notes for the implicit implementation are documented in <a href="project_weldformfem.html">WeldFormFEM</a>, since this benchmark is one of the validation cases used for that solver line.</p>
   <p>
-The detailed formulation notes, mesh strategy, and quantitative comparison table for the implicit implementation are documented in <a href="project_weldformfem.html">WeldFormFEM</a>, since this benchmark is one of the validation cases used for that solver line.
+This benchmark is also related to <a href="https://www.researchgate.net/publication/396194643_Effect_of_Die_Temperature_and_Speed_on_Hot_Upsetting_of_AA2024_A_Computational_Numerical_Study">Effect of Die Temperature and Speed on Hot Upsetting of AA2024: A Computational Numerical Study</a>, which provides additional context for upsetting-based validation workflows.
   </p>
 </section>
 
@@ -90,6 +89,19 @@ For the 2D model, an approximate element size of 0.5 mm is used.
   </p>
   <p>
 During remeshing, the objective is to preserve the original mesh density as much as possible instead of progressively refining or coarsening the model.
+  </p>
+</section>
+
+<section class="case-section">
+  <h3>Compression benchmark summary</h3>
+  <p>
+The 3D compression benchmark was intentionally performed using a very coarse tetrahedral mesh of about 3,000 elements to keep computational cost low for educational and demonstration purposes. Even with that coarse discretization, the overall load evolution remains in good agreement with Simufact Forming, with a relative RMSE below 5%.
+  </p>
+  <p>
+The 3D case starts from an initial mesh of 700 nodes and 2950 elements, while the 2D axisymmetric model uses an approximate element size of 0.5 mm. During remeshing, the target is to preserve the original mesh density as much as possible instead of drifting toward systematic refinement or coarsening.
+  </p>
+  <p>
+The quantitative comparison table and benchmark-specific error metrics are reported below for this validation case.
   </p>
 </section>
 

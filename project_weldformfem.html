@@ -39,7 +39,7 @@
 </div>
 
 <p>
-WeldFormFEM is the main finite element solver line for large deformation mechanics, with ongoing work in explicit dynamics, implicit forming, contact stability, tetra and hexa support, and remeshing under severe distortion.
+WeldFormFEM is the main finite element solver line for large deformation mechanics. It currently follows two complementary methods: an explicit line for fast large-deformation simulations and an implicit line for quasi-static forming problems.
 </p>
 
 <section class="case-section">
@@ -54,17 +54,35 @@ WeldFormFEM is the main finite element solver line for large deformation mechani
 </section>
 
 <section class="case-section">
-  <h3>Implicit forming line</h3>
+  <h3>Explicit method</h3>
+  <p>
+The explicit method is based on reduced integration and is intended for large-deformation problems where robust time-marching and low per-step cost are important.
+  </p>
+  <p>
+Its 2D remeshing workflow follows the remeshing strategy described in Paulo Martins' metal forming work.
+  </p>
+  <p>
+For 3D simulations, the remeshing workflow is based on MMG.
+  </p>
+  <p>
+The GitHub link below points to a reduced public version of this explicit solver line.
+  </p>
+</section>
+
+<section class="case-section">
+  <h3>Implicit method</h3>
   <p>
 The implicit branch is currently being used for quasi-static large-deformation forming benchmarks, including upsetting/compression and extrusion-style validation cases where contact stability, pressure behavior, and mesh robustness are critical.
+  </p>
+  <p>
+For slow forging workflows, the implicit formulation is usually the most common choice. In this project, that line is the main path for quasi-static metal forming studies.
   </p>
   <p>
 In the upsetting/compression benchmark, the 2D formulation uses a mixed U-P approach with selective reduced integration, following the Paulo Martins scheme used in metal forming simulations.
   </p>
   <div class="citation-block">
-    <p><strong>References related to the Martins scheme</strong></p>
+    <p><strong>Reference related to the general implicit rigid-viscoplastic formulation</strong></p>
     <p>Nielsen and Martins, <em>Metal Forming: Formability, Simulation, Tool Design</em>.</p>
-    <p>Paulo Martins, metal forming reference in Portuguese.</p>
   </div>
   <p>
 For the 3D model, the implementation does not rely on hexahedra as described in Martins' book. Instead, it follows the MINI element methodology with bubble enrichment for mixed formulations.
@@ -74,26 +92,17 @@ For the 3D model, the implementation does not rely on hexahedra as described in 
     <p>Arnold, Brezzi and Fortin, <em>A stable finite element for the Stokes equation</em>.</p>
     <p>Andrea Cioncolini and Daniele Boffi, <em>The MINI mixed finite element for the Stokes problem: An experimental investigation</em>.</p>
   </div>
-</section>
-
-<section class="case-section">
-  <h3>Compression benchmark summary</h3>
   <p>
-The 3D compression benchmark was intentionally performed using a very coarse tetrahedral mesh of about 3,000 elements to keep computational cost low for educational and demonstration purposes. Even with that coarse discretization, the overall load evolution remains in good agreement with Simufact Forming, with a relative RMSE below 5%.
-  </p>
-  <p>
-The 3D case starts from an initial mesh of 700 nodes and 2950 elements, while the 2D axisymmetric model uses an approximate element size of 0.5 mm. During remeshing, the target is to preserve the original mesh density as much as possible instead of drifting toward systematic refinement or coarsening.
-  </p>
-  <p>
-The quantitative comparison table and benchmark-specific error metrics are reported in the dedicated <a href="benchmark_upsetting_compression.html">Upsetting / Compression validation page</a>.
+The implicit version used for slow forging workflows is also available as a binary in the <a href="https://github.com/luchete80/WeldFormGUI">WeldFormGUI repository</a>.
   </p>
 </section>
 
 <section class="case-section">
   <h3>Project links</h3>
-  <p><a href="https://github.com/luchete80/WeldFormFEM">GitHub repository</a></p>
+  <p><a href="https://github.com/luchete80/WeldFormFEM">GitHub repository</a> - reduced public version of the explicit solver line.</p>
   <p><a href="benchmarks.html">Benchmark pages</a></p>
   <p><a href="blog.html">Development blog entries</a></p>
+  <p><a href="benchmark_upsetting_compression.html">Upsetting / Compression validation page</a></p>
 </section>
 
 <p class="case-nav">
@@ -106,6 +115,7 @@ The quantitative comparison table and benchmark-specific error metrics are repor
 <ul>
 <li>Explicit FEM</li>
 <li>Implicit forming</li>
+<li>Custom remeshing</li>
 <li>Large deformation</li>
 </ul>
 </section>
