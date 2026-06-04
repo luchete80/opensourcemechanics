@@ -276,6 +276,34 @@ body {
     margin: 1.5rem 0;
 }
 
+.benchmark-category {
+    margin: 2rem 0;
+}
+
+.benchmark-category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.benchmark-category-header h3 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.benchmark-category-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #2DD4BF 0%, #243244 100%);
+}
+
+.benchmark-category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
 .benchmark-card,
 .case-section {
     background: #111B2E;
@@ -287,6 +315,15 @@ body {
 .benchmark-card h3,
 .case-section h3 {
     margin-top: 0;
+}
+
+.benchmark-card h3 a,
+.benchmark-card h3 span {
+    color: #E6EDF3;
+}
+
+.benchmark-card h3 span {
+    cursor: default;
 }
 
 .benchmark-card p,

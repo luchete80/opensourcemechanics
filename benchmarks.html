@@ -31,52 +31,175 @@
 
 <main class="main-content">
 
-<h2>Benchmarks and Validation Cases</h2>
+<h2>Validation Cases</h2>
 
 <p>
-This section is organized by specific validation case rather than by method family. Each page focuses on one benchmark, the reference problem setup, and the comparison targets used to evaluate the solver behavior.
+Benchmarks and validation cases sit at the same strategic level as videos: not because they drive more traffic today, but because they become durable technical assets.
 </p>
 
 <p>
-That makes it easier to compare formulations across FEM, SPH, or mixed approaches without hiding the actual forming process behind a broad category label.
+One well-documented benchmark can remain useful for years through citations, technical searches, GitHub, LinkedIn, and direct comparison workflows. For that reason, this section is organized as one main landing page with categories inside it.
 </p>
 
-<div class="benchmark-grid">
-  <article class="benchmark-card">
-    <h3><a href="benchmark_upsetting_compression.html">Upsetting / Compression</a></h3>
-    <p>Axisymmetric bulk compression used to compare force evolution, barreling, and plastic strain patterns.</p>
-    <div class="publication-tags"><span>Metal Forming</span><span>Compression</span><span>Validation</span></div>
-  </article>
+<section class="benchmark-category">
+  <div class="benchmark-category-header">
+    <h3>FEM Fundamentals</h3>
+    <div class="benchmark-category-divider"></div>
+  </div>
+  <div class="benchmark-category-list">
+    <article class="benchmark-card">
+      <h3><span>Cantilever Beam</span></h3>
+      <p>Baseline structural case for checking simple elastic bending behavior and reference displacement fields.</p>
+      <div class="publication-tags"><span>FEM Fundamentals</span><span>Planned</span></div>
+    </article>
 
-  <article class="benchmark-card">
-    <h3><a href="benchmark_direct_extrusion.html">Direct Extrusion</a></h3>
-    <p>Forward extrusion case for checking flow through the die, pressure levels, and steady-state shape prediction.</p>
-    <div class="publication-tags"><span>Metal Forming</span><span>Direct Extrusion</span><span>Benchmark</span></div>
-  </article>
+    <article class="benchmark-card">
+      <h3><span>Cook Membrane</span></h3>
+      <p>Standard bending-dominated membrane test for displacement accuracy and locking sensitivity.</p>
+      <div class="publication-tags"><span>FEM Fundamentals</span><span>Planned</span></div>
+    </article>
 
-  <article class="benchmark-card">
-    <h3><a href="benchmark_backward_extrusion.html">Backward Extrusion</a></h3>
-    <p>Multi-stage cold forming reference case tied to the Torx nut study and suitable for contact-heavy validation.</p>
-    <div class="publication-tags"><span>Metal Forming</span><span>Backward Extrusion</span><span>Cold Forming</span></div>
-  </article>
+    <article class="benchmark-card">
+      <h3><span>Patch Test</span></h3>
+      <p>Consistency check for basic element behavior under constant-strain states.</p>
+      <div class="publication-tags"><span>FEM Fundamentals</span><span>Planned</span></div>
+    </article>
+  </div>
+</section>
 
-  <article class="benchmark-card">
-    <h3><a href="benchmark_closed_die_forging.html">Closed Die Forging</a></h3>
-    <p>Impression-die forging benchmark intended for validating filling, flash generation, and contact robustness.</p>
-    <div class="publication-tags"><span>Metal Forming</span><span>Closed Die Forging</span><span>Validation</span></div>
-  </article>
-</div>
+<section class="benchmark-category">
+  <div class="benchmark-category-header">
+    <h3>Contact &amp; Nonlinear Mechanics</h3>
+    <div class="benchmark-category-divider"></div>
+  </div>
+  <div class="benchmark-category-list">
+    <article class="benchmark-card">
+      <h3><span>Contact Block</span></h3>
+      <p>Reference contact case for normal enforcement, pressure transfer, and basic nonlinear convergence behavior.</p>
+      <div class="publication-tags"><span>Contact</span><span>Planned</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>Hertz Contact</span></h3>
+      <p>Classical contact-pressure benchmark with an analytical background for comparison.</p>
+      <div class="publication-tags"><span>Contact</span><span>Planned</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>Penalty Contact</span></h3>
+      <p>Useful for studying enforcement stiffness, penetration control, and robustness across contact settings.</p>
+      <div class="publication-tags"><span>Contact</span><span>Planned</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="benchmark-category">
+  <div class="benchmark-category-header">
+    <h3>Metal Forming</h3>
+    <div class="benchmark-category-divider"></div>
+  </div>
+  <div class="benchmark-category-list">
+    <article class="benchmark-card">
+      <h3><a href="benchmark_upsetting_compression.html">Cold Upsetting</a></h3>
+      <p>Axisymmetric bulk compression used to compare force evolution, barreling, and plastic strain patterns.</p>
+      <div class="publication-tags"><span>Metal Forming</span><span>Linked</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>Hot Upsetting</span></h3>
+      <p>Planned benchmark for thermo-sensitive compression, die interaction, and hot-forming response.</p>
+      <div class="publication-tags"><span>Metal Forming</span><span>Planned</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>Ring Compression</span></h3>
+      <p>Planned calibration case for friction sensitivity and barreling/contact trends.</p>
+      <div class="publication-tags"><span>Metal Forming</span><span>Planned</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><a href="benchmark_backward_extrusion.html">Backward Extrusion</a></h3>
+      <p>Multi-stage cold forming reference case tied to the Torx nut study and suitable for contact-heavy validation.</p>
+      <div class="publication-tags"><span>Metal Forming</span><span>Linked</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><a href="benchmark_closed_die_forging.html">Closed Die Forging</a></h3>
+      <p>Impression-die forging benchmark intended for validating filling, flash generation, and contact robustness.</p>
+      <div class="publication-tags"><span>Metal Forming</span><span>Linked</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><a href="benchmark_direct_extrusion.html">Direct Extrusion</a></h3>
+      <p>Forward extrusion case for checking flow through the die, pressure levels, and steady-state shape prediction.</p>
+      <div class="publication-tags"><span>Metal Forming</span><span>Linked</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="benchmark-category">
+  <div class="benchmark-category-header">
+    <h3>Explicit Dynamics</h3>
+    <div class="benchmark-category-divider"></div>
+  </div>
+  <div class="benchmark-category-list">
+    <article class="benchmark-card">
+      <h3><a href="benchmark_explicit_cantilever_beam.html">Cantilever Beam</a></h3>
+      <p>Transient explicit beam response with imposed tip deformation, rigid contact, and free vibration after release.</p>
+      <div class="publication-tags"><span>Explicit Dynamics</span><span>Linked</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>Explicit Compression</span></h3>
+      <p>Planned benchmark for impact-free but fully transient compression under explicit integration.</p>
+      <div class="publication-tags"><span>Explicit Dynamics</span><span>Planned</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>OpenRadioss Comparison</span></h3>
+      <p>Planned cross-code comparison slot for explicit dynamics cases and solver-to-solver response tracking.</p>
+      <div class="publication-tags"><span>Explicit Dynamics</span><span>Planned</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>Impact Cases</span></h3>
+      <p>Reserved category entry for future high-rate and collision-driven benchmark problems.</p>
+      <div class="publication-tags"><span>Explicit Dynamics</span><span>Planned</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="benchmark-category">
+  <div class="benchmark-category-header">
+    <h3>Thermo-Mechanical</h3>
+    <div class="benchmark-category-divider"></div>
+  </div>
+  <div class="benchmark-category-list">
+    <article class="benchmark-card">
+      <h3><span>Hot Forging</span></h3>
+      <p>Planned coupled benchmark for temperature-dependent flow, die contact, and deformation evolution.</p>
+      <div class="publication-tags"><span>Thermo-Mechanical</span><span>Planned</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>Thermal Coupling Cases</span></h3>
+      <p>Reserved group for coupled thermal-mechanical validation with heat transfer and transient temperature fields.</p>
+      <div class="publication-tags"><span>Thermo-Mechanical</span><span>Planned</span></div>
+    </article>
+  </div>
+</section>
 
 </main>
 
 <section class="left-sidebar">
-<h3>Current Cases</h3>
+<h3>Current Links</h3>
 
 <ul>
-<li>Upsetting / Compression</li>
+<li>Cold Upsetting</li>
 <li>Direct Extrusion</li>
 <li>Backward Extrusion</li>
 <li>Closed Die Forging</li>
+<li>Cantilever Beam (Explicit)</li>
 </ul>
 
 </section>
@@ -86,11 +209,11 @@ That makes it easier to compare formulations across FEM, SPH, or mixed approache
 <h2>Structure</h2>
 
 <p>
-Each benchmark has its own HTML page so figures, references, load curves, and solver notes can grow independently.
+Each category works as a divider inside the same landing page, so the section can grow without creating several nearly empty index pages.
 </p>
 
 <p>
-If the section expands later, method tags such as FEM, SPH, or mixed U-P can still be used inside each case without changing the navigation model.
+For now, only the active metal forming cases and the new explicit cantilever beam have dedicated pages. The rest stay visible as roadmap entries without links.
 </p>
 
 </aside>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Explicit Cantilever Beam Benchmark | OPEN SOURCE MECHANICS </title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hg_styles.css" />
+<link rel="stylesheet" href="tag_cloud_styles.css" />
+</head>
+
+<body onload="checkCookies()">
+
+<header>
+<h1>
+<img alt="button" border="0" width="1000" height="150" src="title.png" align="center"/>
+</h1>
+
+<nav class="navbar">
+  <ul>
+    <li><a class="nav-btn" href="index.html">Home</a></li>
+    <li><a class="nav-btn" href="projects.html">Projects</a></li>
+    <li><a class="nav-btn" href="blog.html">Blog</a></li>
+    <li><a class="nav-btn" href="publications.html">Publications</a></li>
+    <li><a class="nav-btn primary" href="benchmarks.html">Benchmarks</a></li>
+    <li><a class="nav-btn" href="subscribe.html">Subscribe</a></li>
+    <li><a class="nav-btn" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</header>
+
+<div class="holy-grail-grid">
+
+<main class="main-content">
+
+<h2>Validation Case: Cantilever Beam</h2>
+
+<div class="case-meta">
+  <span>Explicit Dynamics</span>
+  <span>Elastic Vibration</span>
+  <span>Contact Release</span>
+  <span>Transient Response</span>
+</div>
+
+<p>
+This benchmark is a transient explicit cantilever beam case used to assess elastic wave propagation, contact release, and the free-vibration response after tip loading is removed.
+</p>
+
+<section class="case-section">
+  <h3>Reference paper</h3>
+  <div class="citation-block">
+    <p><strong><a href="https://constellation.uqac.ca/id/eprint/4246/1/Fraser_uqac_0862D_10345.pdf">A Material Point Method for Simulating the Thermomechanical Response of Elastic Solids Undergoing Large Deformations</a></strong></p>
+    <p>Fraser, UQAC thesis PDF</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <h3>Model setup</h3>
+  <ul>
+    <li>The leftmost end of the beam is fixed and the rightmost end is free.</li>
+    <li>An initial deformation equal to 10% of the beam thickness is imposed at the tip.</li>
+    <li>The total simulation time is 0.02 s to capture the transient elastic deformation.</li>
+    <li>The beam material is AA6061-T6 with elastic modulus 70.0 GPa, density 2700 kg/m3, and Poisson ratio 0.33.</li>
+    <li>The rectangular cross section is 24 mm thick and 12 mm wide.</li>
+    <li>The total beam length is 100 mm.</li>
+    <li>The particle and finite element grid size is 2 mm.</li>
+  </ul>
+</section>
+
+<section class="case-section">
+  <h3>Loading sequence</h3>
+  <ul>
+    <li>A rigid plate presses downward on the beam tip.</li>
+    <li>The plate displacement is 2.4 mm applied over 0.005 s.</li>
+    <li>From t = 0.005 s to t = 0.01 s, the plate is held fixed.</li>
+    <li>At t = 0.01 s, contact between the plate and the beam is disabled.</li>
+    <li>After release, the beam vibrates freely.</li>
+  </ul>
+</section>
+
+<section class="case-section">
+  <h3>What this benchmark checks</h3>
+  <ul>
+    <li>Transient deformation under explicit time integration</li>
+    <li>Contact enforcement during tip loading</li>
+    <li>Release behavior when contact is removed</li>
+    <li>Free-vibration response of the elastic body</li>
+  </ul>
+</section>
+
+<p class="case-nav">
+  <a href="benchmarks.html">Back to benchmarks</a>
+</p>
+
+</main>
+
+<section class="left-sidebar">
+<h3>Focus</h3>
+
+<ul>
+<li>Tip deflection</li>
+<li>Transient response</li>
+<li>Contact release</li>
+<li>Elastic vibration</li>
+</ul>
+
+</section>
+
+<aside class="right-sidebar">
+
+<h2>Status</h2>
+
+<p>
+This page captures the benchmark definition and reference source. It is ready for plots of tip displacement, time history, and any comparison against OpenRadioss or the in-house explicit solver.
+</p>
+
+</aside>
+
+<footer class="footer">
+OpenSource Mechanics
+</footer>
+
+</div>
+
+<script src="./sticky.js"></script>
+
+</body>
+
+<script>
+function checkCookies() {
+}
+</script>
+
+</html>
