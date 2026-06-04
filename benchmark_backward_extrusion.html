@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Backward Extrusion Benchmark | OPEN SOURCE MECHANICS </title>
+<title> Cold Backward Extrusion Benchmark | OPEN SOURCE MECHANICS </title>
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="hg_styles.css" />
 <link rel="stylesheet" href="tag_cloud_styles.css" />
@@ -31,17 +31,17 @@
 
 <main class="main-content">
 
-<h2>Validation Case: Backward Extrusion</h2>
+<h2>Validation Case: Cold Backward Extrusion</h2>
 
 <div class="case-meta">
   <span>Metal Forming</span>
-  <span>Backward Extrusion</span>
+  <span>Cold Backward Extrusion</span>
   <span>Cold Forming</span>
   <span>Multi-Stage</span>
 </div>
 
 <p>
-This case is reserved for a backward extrusion validation sequence with demanding contact and confined material flow. It is a strong benchmark for checking tool interaction, cavity filling, and deformation history across multiple forming stages.
+This validation case corresponds to the cold backward extrusion stage of a multi-stage forming sequence. Here we focus on stage 2 of the reference paper, comparing the global load level and the plastic deformation pattern obtained with the present implicit formulation.
 </p>
 
 <section class="case-section">
@@ -52,7 +52,7 @@ This case is reserved for a backward extrusion validation sequence with demandin
     <p>Department of Mechanical and Automation Engineering / Graduate School of Mechatronic Science and Technology, Taiwan Steel University, Taiwan</p>
   </div>
   <p>
-This paper will be the anchor reference for the backward extrusion case. Once you send the benchmark text, this page can be expanded with the stage-by-stage description, material data, forming loads, and geometry comparison.
+This benchmark corresponds to stage 2 of the paper. In the reference, the reported forming load is 55 kN, while the plastic deformation keeps the same overall aspect as in the numerical result shown below.
   </p>
 </section>
 
@@ -65,7 +65,23 @@ This paper will be the anchor reference for the backward extrusion case. Once yo
     <li>For strains above 0.65, the flow stress is assumed constant.</li>
     <li>The benchmark is solved as a 2D axisymmetric model.</li>
     <li>A maximum element size of 0.2 mm was used in the tested mesh.</li>
+    <li>Zero friction was assumed in this benchmark.</li>
+    <li>This differs from the paper because the implicit shear friction formulation is still under study and validation.</li>
   </ul>
+</section>
+
+<section class="case-section">
+  <h3>Stage 2 comparison</h3>
+  <figure>
+    <img src="images/benchmarks/01_extrusion_bck.png" alt="Cold backward extrusion benchmark corresponding to stage 2 of the reference paper" style="max-width:100%; height:auto;" />
+    <figcaption>Stage 2 of the reference paper used for the cold backward extrusion comparison.</figcaption>
+  </figure>
+  <p>
+The reference reports a load of 55 kN for this stage. In our current setup, the main point of agreement is the plastic deformation shape, which preserves the same visual pattern as the published result.
+  </p>
+  <p>
+For this comparison we used null friction, unlike the paper. That simplification is intentional while the implicit shear friction model is still being studied and validated.
+  </p>
 </section>
 
 <section class="case-section">
@@ -89,10 +105,10 @@ This paper will be the anchor reference for the backward extrusion case. Once yo
 <h3>Focus</h3>
 
 <ul>
-<li>Multi-stage sequence</li>
+<li>Stage 2 of the paper</li>
 <li>Cold forming loads</li>
-<li>Cavity filling</li>
-<li>Part geometry</li>
+<li>Plastic deformation pattern</li>
+<li>Friction sensitivity</li>
 </ul>
 
 </section>
@@ -102,7 +118,7 @@ This paper will be the anchor reference for the backward extrusion case. Once yo
 <h2>Status</h2>
 
 <p>
-The page structure and paper reference are in place. The detailed explanatory text can be added directly once you send it.
+Current comparison: stage 2, reference load 55 kN, same plastic deformation aspect, and zero-friction setup for ongoing implicit shear friction validation.
 </p>
 
 </aside>
