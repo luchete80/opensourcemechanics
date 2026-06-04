@@ -269,6 +269,18 @@ body {
     padding: 0.2rem 0.5rem;
 }
 
+.publication-year {
+    margin: 1.5rem 0 0.75rem;
+    padding-left: 0.75rem;
+    border-left: 3px solid #2DD4BF;
+    color: #C9D4E0;
+}
+
+.publication-placeholder {
+    margin: 0;
+    color: #9CA3AF;
+}
+
 .benchmark-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
