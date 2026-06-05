@@ -149,3 +149,101 @@ a:hover {
 a:active {
   color: #ffb300;
 }
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 20px;
+}
+
+.cta-pill {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid #36506f;
+  border-radius: 999px;
+  background: #182133;
+  color: #f2f4f6;
+  font-family: mytwcent;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.cta-pill:hover {
+  background: #22314a;
+  border-color: #7ec8e3;
+}
+
+.cta-pill-primary {
+  background: #cceecc;
+  border-color: #cceecc;
+  color: #0f1724;
+}
+
+.cta-pill-primary:hover {
+  background: #b5ddb5;
+  border-color: #b5ddb5;
+  color: #0f1724;
+}
+
+.metrics-section {
+  margin: 36px 0 44px;
+  padding: 24px;
+  border: 1px solid #28364d;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #182133 0%, #141d2c 100%);
+}
+
+.metrics-header h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.metrics-header p {
+  margin-top: 0;
+  color: #c7d3df;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.metric-card {
+  display: block;
+  padding: 18px 16px;
+  border: 1px solid #314563;
+  border-radius: 16px;
+  background: rgba(10, 16, 28, 0.55);
+  text-decoration: none;
+}
+
+.metric-card:hover {
+  border-color: #7ec8e3;
+  background: rgba(18, 27, 44, 0.75);
+}
+
+.metric-value {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #f2f4f6;
+}
+
+.metric-label {
+  display: block;
+  color: #c7d3df;
+  font-size: 0.95rem;
+}
+
+.metrics-note {
+  margin-bottom: 0;
+  margin-top: 18px;
+  color: #9fb0c3;
+  font-size: 0.92rem;
+}
