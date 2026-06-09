@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 2D/3D Tensile Test Benchmark | OPEN SOURCE MECHANICS </title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hg_styles.css" />
+<link rel="stylesheet" href="tag_cloud_styles.css" />
+</head>
+
+<body onload="checkCookies()">
+
+<header>
+<h1>
+<img alt="button" border="0" width="1000" height="150" src="title.png" align="center"/>
+</h1>
+
+<nav class="navbar">
+  <ul>
+    <li><a class="nav-btn" href="index.html">Home</a></li>
+    <li><a class="nav-btn" href="projects.html">Projects</a></li>
+    <li><a class="nav-btn" href="blog.html">Blog</a></li>
+    <li><a class="nav-btn" href="publications.html">Publications</a></li>
+    <li><a class="nav-btn primary" href="benchmarks.html">Benchmarks</a></li>
+    <li><a class="nav-btn" href="subscribe.html">Subscribe</a></li>
+    <li><a class="nav-btn" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</header>
+
+<div class="holy-grail-grid">
+
+<main class="main-content">
+
+<h2>Validation Case: 2D/3D Tensile Test</h2>
+
+<div class="case-meta">
+  <span>Explicit Dynamics</span>
+  <span>Tensile Test</span>
+  <span>2D and 3D</span>
+  <span>Mass Scaling</span>
+</div>
+
+<p>
+This benchmark was carried out with the explicit solver as a tensile test in both 2D and 3D. The imposed velocity is 1 m/s, intentionally exaggerated to keep the case short, and a manual mass scaling factor of 100 is introduced through the material density.
+</p>
+
+<figure class="case-image">
+  <img src="images/benchmarks/tensile_test_01.png" alt="2D tensile test benchmark image." />
+  <figcaption>
+    Explicit 2D tensile test benchmark result.
+  </figcaption>
+</figure>
+
+<figure class="case-image">
+  <img src="images/benchmarks/tensile_test_02.png" alt="3D tensile test benchmark image." />
+  <figcaption>
+    Explicit 3D tensile test benchmark result.
+  </figcaption>
+</figure>
+
+<section class="case-section">
+  <h3>Model setup</h3>
+  <ul>
+    <li>The benchmark is solved with the explicit formulation.</li>
+    <li>Two versions are considered: a 2D model and a 3D model.</li>
+    <li>The loading is an imposed tensile velocity of 1 m/s.</li>
+    <li>The loading rate is intentionally high to make the benchmark computationally practical in explicit dynamics.</li>
+    <li>Manual mass scaling is applied with a factor of 100 by increasing the material density.</li>
+  </ul>
+</section>
+
+<section class="case-section">
+  <h3>Material model</h3>
+  <p>
+This case uses a generic aluminum material with a Hollomon plastic law and the following properties:
+  </p>
+  <ul>
+    <li><strong>id:</strong> Solid</li>
+    <li><strong>type:</strong> Hollomon</li>
+    <li><strong>const:</strong> [386.796e6, 0.154]</li>
+    <li><strong>density0:</strong> 27000.0</li>
+    <li><strong>thermalHeatCap:</strong> 87.50</li>
+    <li><strong>thermalCond:</strong> 190.0</li>
+    <li><strong>youngsModulus:</strong> 68.9E9</li>
+    <li><strong>poissonsRatio:</strong> 0.3</li>
+    <li><strong>yieldStress0:</strong> 190.4E6</li>
+  </ul>
+</section>
+
+<section class="case-section">
+  <h3>What this benchmark checks</h3>
+  <ul>
+    <li>Explicit tensile response under a prescribed loading speed</li>
+    <li>Consistency between 2D and 3D tensile simulations</li>
+    <li>Robustness of plastic flow with a Hollomon hardening law</li>
+    <li>Influence of manual mass scaling on a simple validation case</li>
+  </ul>
+</section>
+
+<section class="case-section">
+  <h3>Notes for interpretation</h3>
+  <p>
+Because the loading speed is set to 1 m/s and the density is scaled manually, this benchmark should be read as a numerical validation case for the explicit implementation rather than as a quasi-static physical test.
+  </p>
+</section>
+
+<p class="case-nav">
+  <a href="benchmarks.html">Back to benchmarks</a>
+</p>
+
+</main>
+
+<section class="left-sidebar">
+<h3>Focus</h3>
+
+<ul>
+<li>2D vs 3D response</li>
+<li>Explicit integration</li>
+<li>Plastic hardening</li>
+<li>Mass scaling effects</li>
+</ul>
+
+</section>
+
+<aside class="right-sidebar">
+
+<h2>Benchmark Scope</h2>
+
+<p>
+This page documents a compact explicit tensile benchmark used to compare 2D and 3D behavior under the same material law, loading speed, and manual mass scaling strategy.
+</p>
+
+</aside>
+
+<footer class="footer">
+OpenSource Mechanics
+</footer>
+
+</div>
+
+<script src="./sticky.js"></script>
+
+</body>
+
+<script>
+function checkCookies() {
+}
+</script>
+
+</html>
