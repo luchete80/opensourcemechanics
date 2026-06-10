@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Upsetting Compression Benchmark | OPEN SOURCE MECHANICS </title>
+<title> Cold Upsetting Coulomb Friction Benchmark | OPEN SOURCE MECHANICS </title>
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="hg_styles.css" />
 <link rel="stylesheet" href="tag_cloud_styles.css" />
@@ -31,17 +31,18 @@
 
 <main class="main-content">
 
-<h2>Validation Case: Upsetting / Compression</h2>
+<h2>Validation Case: Cold Upsetting (Coulomb Friction)</h2>
 
 <div class="case-meta">
   <span>Metal Forming</span>
-  <span>Compression</span>
+  <span>Cold Upsetting</span>
+  <span>Coulomb Friction</span>
   <span>Axisymmetric</span>
   <span>Validation Case</span>
 </div>
 
 <p>
-This case is intended to validate bulk compression under large plastic deformation, with special attention to contact pressure evolution, load-displacement response, and the strain field that develops during barreling.
+This case is intended to validate cold open-die upsetting under large plastic deformation, with special attention to pressure-dependent contact traction, load-displacement response, and the strain field that develops during barreling.
 </p>
 
 <figure class="case-image">
@@ -62,6 +63,8 @@ This case is intended to validate bulk compression under large plastic deformati
 <section class="case-section">
   <h3>What this benchmark checks</h3>
   <ul>
+    <li>Coulomb friction with <code>&tau; = &mu; p</code></li>
+    <li>Pressure-dependent contact traction in open-die upsetting</li>
     <li>Force evolution during upsetting</li>
     <li>Contact stability under large flattening</li>
     <li>Barreling and free-surface flow</li>
@@ -75,7 +78,7 @@ This case is intended to validate bulk compression under large plastic deformati
 This is a good first validation case because it is simple enough to interpret, but still exposes common failure modes: noisy contact forces, excessive distortion, unstable integration, and poor pressure transfer near the die interface.
   </p>
   <p>
-The current image already contains the right ingredients. For a stronger validation figure, it would help to crop the empty margins, unify the labels in one language, increase the force-curve contrast, and add panel letters so the reader can map each subplot to the discussion.
+This page is intentionally dedicated to the Coulomb formulation. It should stay separate from the shear-friction upsetting benchmark because the objective here is to validate <code>&tau; = &mu; p</code>, not the bulk-forming law <code>&tau; = m k</code>.
   </p>
   <p>
 The detailed formulation notes for the implicit implementation are documented in <a href="project_weldformfem.html">WeldFormFEM</a>, since this benchmark is one of the validation cases used for that solver line.</p>
@@ -101,7 +104,7 @@ During remeshing, the objective is to preserve the original mesh density as much
 </section>
 
 <section class="case-section">
-  <h3>Compression benchmark summary</h3>
+  <h3>Cold upsetting benchmark summary</h3>
   <p>
 The 3D compression benchmark was intentionally performed using a very coarse tetrahedral mesh of about 3,000 elements to keep computational cost low for educational and demonstration purposes. Even with that coarse discretization, the overall load evolution remains in good agreement with Simufact Forming, with a relative RMSE below 5%.
   </p>
@@ -140,7 +143,7 @@ The quantitative comparison table and benchmark-specific error metrics are repor
 
 <p class="case-nav">
   <a href="benchmarks.html">Back to benchmarks</a>
-  <a href="benchmark_direct_extrusion.html">Next case: Direct extrusion</a>
+  <a href="benchmark_hot_upsetting_shear.html">Next case: Hot Upsetting (Shear Friction)</a>
 </p>
 
 </main>

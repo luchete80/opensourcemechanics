@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Hot Upsetting Shear Friction Benchmark | OPEN SOURCE MECHANICS </title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hg_styles.css" />
+<link rel="stylesheet" href="tag_cloud_styles.css" />
+</head>
+
+<body onload="checkCookies()">
+
+<header>
+<h1>
+<img alt="button" border="0" width="1000" height="150" src="title.png" align="center"/>
+</h1>
+
+<nav class="navbar">
+  <ul>
+    <li><a class="nav-btn" href="index.html">Home</a></li>
+    <li><a class="nav-btn" href="projects.html">Projects</a></li>
+    <li><a class="nav-btn" href="blog.html">Blog</a></li>
+    <li><a class="nav-btn" href="publications.html">Publications</a></li>
+    <li><a class="nav-btn primary" href="benchmarks.html">Benchmarks</a></li>
+    <li><a class="nav-btn" href="subscribe.html">Subscribe</a></li>
+    <li><a class="nav-btn" href="links.html">Links</a></li>
+  </ul>
+</nav>
+</header>
+
+<div class="holy-grail-grid">
+
+<main class="main-content">
+
+<h2>Validation Case: Hot Upsetting (Shear Friction)</h2>
+
+<div class="case-meta">
+  <span>Metal Forming</span>
+  <span>Hot Upsetting</span>
+  <span>Shear Friction</span>
+  <span>Validation Case</span>
+</div>
+
+<p>
+This benchmark is intended to validate hot open-die upsetting under the metal-forming shear-friction law, with emphasis on sticking-limit behavior, barreling sensitivity, and the load response under large plastic deformation.
+</p>
+
+<section class="case-section">
+  <h3>What this benchmark checks</h3>
+  <ul>
+    <li>Shear-friction formulation with <code>&tau; = m k</code></li>
+    <li>Friction-limited interface shear stress in bulk metal forming</li>
+    <li>Barreling evolution under hot-forming contact conditions</li>
+    <li>Load response and strain distribution with strong die interaction</li>
+  </ul>
+</section>
+
+<section class="case-section">
+  <h3>Why this is a separate benchmark</h3>
+  <p>
+This case is intentionally separated from the Coulomb upsetting benchmark because it validates a different physical law. The target here is not pressure-dependent contact traction of the form <code>&tau; = &mu; p</code>, but the bulk-forming shear-friction model <code>&tau; = m k</code> commonly used in FORGE, DEFORM, QForm, and Simufact workflows.
+  </p>
+  <p>
+Keeping both upsetting cases on different pages avoids the impression that they are the same benchmark with only a parameter change. They are distinct validation targets with different constitutive assumptions at the die-workpiece interface.
+  </p>
+</section>
+
+<section class="case-section">
+  <h3>Reference work</h3>
+  <p>
+This benchmark is referenced to Ebrahimi, R., and Najafizadeh, A., <em>A New Method for Evaluation of Friction in Bulk Metal Forming</em>, <em>Journal of Materials Processing Technology</em>, 152(2), 136-143, 2004.
+  </p>
+  <p>
+DOI: <a href="https://doi.org/10.1016/j.jmatprotec.2004.03.029">10.1016/j.jmatprotec.2004.03.029</a>
+  </p>
+</section>
+
+<section class="case-section">
+  <h3>Suggested validation outputs</h3>
+  <p>
+Useful comparison material for this page includes load-stroke curves, final barreling profiles, equivalent strain contours, and the calibrated shear-friction factor used to match the reference case.
+  </p>
+</section>
+
+<p class="case-nav">
+  <a href="benchmarks.html">Back to benchmarks</a>
+  <a href="benchmark_backward_extrusion.html">Next case: Backward extrusion</a>
+</p>
+
+</main>
+
+<section class="left-sidebar">
+<h3>Focus</h3>
+
+<ul>
+<li>Shear friction law</li>
+<li>Barreling</li>
+<li>Hot-forming contact</li>
+<li>Load curve</li>
+</ul>
+
+</section>
+
+<aside class="right-sidebar">
+
+<h2>Reference Use</h2>
+
+<p>
+This page is structured for a dedicated metal-forming friction benchmark, so it can later host figures, calibration tables, and side-by-side comparisons without mixing Coulomb and shear-friction assumptions.
+</p>
+
+</aside>
+
+<footer class="footer">
+OpenSource Mechanics
+</footer>
+
+</div>
+
+<script src="./sticky.js"></script>
+
+</body>
+
+<script>
+function checkCookies() {
+}
+</script>
+
+</html>
