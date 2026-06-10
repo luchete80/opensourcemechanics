@@ -247,3 +247,47 @@ a:active {
   color: #9fb0c3;
   font-size: 0.92rem;
 }
+
+.download-hero {
+  margin: 8px 0 28px;
+  padding: 28px;
+  border: 1px solid #28364d;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #182133 0%, #141d2c 100%);
+}
+
+.download-eyebrow {
+  margin: 0 0 8px;
+  color: #2dd4bf;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.download-hero h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+}
+
+.download-section {
+  margin: 0 0 30px;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.download-card {
+  padding: 18px 16px;
+  border: 1px solid #314563;
+  border-radius: 16px;
+  background: rgba(10, 16, 28, 0.55);
+  color: #f2f4f6;
+}
+
+.download-card p {
+  margin-bottom: 0;
+}
