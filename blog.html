@@ -57,6 +57,58 @@
       <ul class="entrylist" id='list'> 
 
 
+    <li class="entry">
+      <h2>20260612 - Closed-Die Forging and Shear Friction Validation</h2>
+
+      #FEM #MetalForming #ImplicitSolver #RigidViscoplastic #Forging #Remeshing #Friction #Validation #OpenSource #Cplusplus
+
+      <p>
+        This update introduces two important developments for the WeldForm implicit
+        rigid-viscoplastic solver: the first successful closed-die forging simulation
+        with automatic remeshing and the validation of the shear friction formulation
+        using a classical ring compression benchmark.
+      </p>
+
+      <p>
+        The closed-die forging case involves severe material flow, large deformation,
+        continuous contact evolution, and strong mesh distortion. Automatic remeshing
+        was successfully used throughout the simulation, allowing the forming process
+        to reach completion while maintaining mesh quality.
+      </p>
+
+      <p>
+        Shear friction was also evaluated using the ring compression test described by
+        Ebrahimi and Najafizadeh (2004). The predicted deformation pattern shows good
+        agreement with the reference benchmark, indicating that the implemented friction
+        model is capable of reproducing the expected material flow behavior.
+      </p>
+
+      <p>
+        <img src="images/20260612_1.png" height="400">
+        <img src="images/20260612_2.png" height="400">
+      </p>
+
+      <p><strong>New :</strong></p>
+
+      <ul>
+        <li>First closed-die forging case solved with the implicit rigid-viscoplastic solver</li>
+        <li>Automatic remeshing integrated into the implicit forming workflow</li>
+        <li>Validation of the shear friction formulation using ring compression</li>
+        <li>Improved robustness for large deformation metal forming simulations</li>
+      </ul>
+
+      <p>
+        Reference:
+        Ebrahimi, R., and Najafizadeh, A.,
+        <em>A New Method for Evaluation of Friction in Bulk Metal Forming</em>,
+        Journal of Materials Processing Technology, 152(2), 136-143, 2004.
+      </p>
+
+    </li>
+
+
+
+
 <li class="entry">
   <h2>20260528 - GUI & Solvers Update: Time Functions, Energy Visualization, and First OpenRadioss Python Exporter</h2>
 
