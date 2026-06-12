@@ -449,3 +449,43 @@ body {
 .project-card p {
     margin-bottom: 0.75rem;
 }
+
+.timeline-list {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: minmax(150px, 220px) 1fr;
+    gap: 1rem;
+    align-items: start;
+    background: #111B2E;
+    border: 1px solid #243244;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.timeline-date {
+    color: #2DD4BF;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.timeline-title {
+    color: #E6EDF3;
+    font-weight: 700;
+}
+
+.timeline-note {
+    margin: 0;
+    color: #9CA3AF;
+}
+
+@media (max-width: 700px) {
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+    }
+}
