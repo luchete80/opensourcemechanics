@@ -104,66 +104,48 @@ This is a simple status matrix for the current 2D and 3D implicit solver capabil
   <table class="results-table">
     <thead>
       <tr>
-        <th>Dimension</th>
         <th>Feature</th>
-        <th>Status</th>
+        <th>2D</th>
+        <th>3D</th>
         <th>Notes</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>2D</td>
         <td>Contact</td>
         <td>Working</td>
-        <td>Used in upsetting/compression validation workflows.</td>
+        <td>Working</td>
+        <td>Used in current upsetting/compression and forming validation workflows.</td>
       </tr>
       <tr>
-        <td>2D</td>
+        <td>Automatic penalty</td>
+        <td>-</td>
+        <td>Working</td>
+        <td>Used to improve contact robustness in the 3D quasi-static workflow.</td>
+      </tr>
+      <tr>
         <td>Remeshing</td>
         <td>In progress</td>
-        <td>Active development for distorted quasi-static forming meshes.</td>
-      </tr>
-      <tr>
-        <td>2D</td>
-        <td>Quad mapping after large strain</td>
-        <td>Known limitation</td>
-        <td>Quad remapping is known to have limitations after strong distortion.</td>
-      </tr>
-      <tr>
-        <td>2D</td>
-        <td>Plastic-strain-based remeshing</td>
         <td>Working</td>
-        <td>Available in 2D and used as a refinement trigger.</td>
+        <td>2D is under active development; 3D is already available.</td>
       </tr>
       <tr>
-        <td>3D</td>
-        <td>Contact</td>
-        <td>Working</td>
-        <td>Current forming benchmarks use stable 3D contact handling.</td>
-      </tr>
-      <tr>
-        <td>3D</td>
-        <td>Automatic penalty</td>
-        <td>Working</td>
-        <td>Used to improve contact robustness across quasi-static cases.</td>
-      </tr>
-      <tr>
-        <td>3D</td>
-        <td>Remeshing</td>
-        <td>Working</td>
-        <td>Available in the current 3D implicit workflow.</td>
-      </tr>
-      <tr>
-        <td>3D</td>
         <td>Thermal coupling</td>
+        <td>-</td>
         <td>Working</td>
         <td>Integrated in the current 3D implicit branch.</td>
       </tr>
       <tr>
-        <td>3D</td>
+        <td>Quad mapping after large strain</td>
+        <td>Known limitation</td>
+        <td>-</td>
+        <td>Quad remapping in 2D is known to have limitations after strong distortion.</td>
+      </tr>
+      <tr>
         <td>Plastic-strain-based remeshing</td>
+        <td>Working</td>
         <td>Planned</td>
-        <td>Not yet consolidated in the 3D implicit workflow.</td>
+        <td>Available in 2D and used as a refinement trigger; not yet consolidated in 3D.</td>
       </tr>
     </tbody>
   </table>
