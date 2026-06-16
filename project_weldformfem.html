@@ -97,6 +97,79 @@ The implicit version used for slow forging workflows is also available as a bina
 </section>
 
 <section class="case-section">
+  <h3>Implicit solver feature matrix</h3>
+  <p>
+This is a simple status matrix for the current 2D and 3D implicit solver capabilities. It will be expanded as more workflows are consolidated.
+  </p>
+  <table class="results-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Feature</th>
+        <th>Status</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2D</td>
+        <td>Contact</td>
+        <td>Working</td>
+        <td>Used in upsetting/compression validation workflows.</td>
+      </tr>
+      <tr>
+        <td>2D</td>
+        <td>Remeshing</td>
+        <td>In progress</td>
+        <td>Active development for distorted quasi-static forming meshes.</td>
+      </tr>
+      <tr>
+        <td>2D</td>
+        <td>Quad mapping after large strain</td>
+        <td>Known limitation</td>
+        <td>Quad remapping is known to have limitations after strong distortion.</td>
+      </tr>
+      <tr>
+        <td>2D</td>
+        <td>Plastic-strain-based remeshing</td>
+        <td>Working</td>
+        <td>Available in 2D and used as a refinement trigger.</td>
+      </tr>
+      <tr>
+        <td>3D</td>
+        <td>Contact</td>
+        <td>Working</td>
+        <td>Current forming benchmarks use stable 3D contact handling.</td>
+      </tr>
+      <tr>
+        <td>3D</td>
+        <td>Automatic penalty</td>
+        <td>Working</td>
+        <td>Used to improve contact robustness across quasi-static cases.</td>
+      </tr>
+      <tr>
+        <td>3D</td>
+        <td>Remeshing</td>
+        <td>Working</td>
+        <td>Available in the current 3D implicit workflow.</td>
+      </tr>
+      <tr>
+        <td>3D</td>
+        <td>Thermal coupling</td>
+        <td>Working</td>
+        <td>Integrated in the current 3D implicit branch.</td>
+      </tr>
+      <tr>
+        <td>3D</td>
+        <td>Plastic-strain-based remeshing</td>
+        <td>Planned</td>
+        <td>Not yet consolidated in the 3D implicit workflow.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="case-section">
   <h3>Project links</h3>
   <p><a href="https://github.com/luchete80/WeldFormFEM">GitHub repository</a> - reduced public version of the explicit solver line.</p>
   <p><a href="project_weldformfem_milestones.html">WeldFormFEM milestones</a></p>
