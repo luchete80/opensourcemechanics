@@ -56,6 +56,52 @@
       
       <ul class="entrylist" id='list'> 
 
+<li class="entry">
+  <h2>20260617 - Friction Matters: Influence of Shear Friction on Material Flow and Forming Loads</h2>
+
+#FEM #MetalForming #Extrusion #Friction #ShearFriction #MaterialFlow #Simulation #CAE #OpenSource #Cplusplus
+
+  <p>
+    Friction plays a critical role in metal forming simulations. Even when all other
+    process parameters remain unchanged, variations in friction can significantly
+    alter material flow and the forces required to complete the forming operation.
+  </p>
+
+  <p>
+    The figure below compares three extrusion simulations performed using the same
+    geometry, material model, mesh, and boundary conditions. The only parameter
+    modified was the shear friction factor (<em>m</em>).
+  </p>
+
+  <p>
+    As friction increases, the material experiences greater resistance while flowing
+    through the die. This effect modifies the deformation pattern and leads to
+    higher forming loads. The results highlight why friction calibration is one of
+    the most important aspects of predictive metal forming simulations.
+  </p>
+
+  <p>
+    <img src="images/20260617_1.png" height="400">
+  </p>
+
+  <p><strong>Key observations:</strong></p>
+
+  <ul>
+    <li>Only the shear friction factor was modified between simulations</li>
+    <li>Material flow behavior changes significantly as friction increases</li>
+    <li>Higher friction results in larger forming loads</li>
+    <li>Final deformation patterns differ despite identical process conditions</li>
+    <li>Accurate friction modeling is essential for reliable metal forming predictions</li>
+  </ul>
+
+<p>
+  The observed response confirms that the shear friction formulation is
+  active and producing the expected effect on the solution. Increasing
+  the friction factor results in higher extrusion loads and noticeable
+  changes in material flow behavior.
+</p>
+</li>
+
 
     <li class="entry">
       <h2>20260612 - Closed-Die Forging and Shear Friction Validation</h2>
