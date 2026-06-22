@@ -248,6 +248,53 @@ a:active {
   font-size: 0.92rem;
 }
 
+/* Solver validation page: force dark charcoal theme from CSS so the HTML can
+   be regenerated without needing inline style edits. */
+.validation-summary-block {
+  background: #141d2c !important;
+  border: 1px solid #28364d !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28) !important;
+  color: #e6edf3 !important;
+}
+
+.validation-summary-block h1,
+.validation-summary-block h2,
+.validation-summary-block h3,
+.validation-summary-block p,
+.validation-summary-block li,
+.validation-summary-block code,
+.validation-summary-block td,
+.validation-summary-block th {
+  color: #e6edf3 !important;
+}
+
+.validation-summary-block table {
+  background: #111728 !important;
+}
+
+.validation-summary-block th,
+.validation-summary-block td {
+  border: 1px solid #314563 !important;
+}
+
+.validation-summary-block th {
+  background: #1b2739 !important;
+}
+
+.validation-summary-block tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+.validation-summary-block tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.validation-summary-block code {
+  background: #0b1220;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
 .download-hero {
   margin: 8px 0 28px;
   padding: 28px;
