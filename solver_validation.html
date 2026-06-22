@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Solver Validation | OPEN SOURCE MECHANICS </title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="hg_styles.css" />
+<link rel="stylesheet" href="tag_cloud_styles.css" />
+<style>
+  .validation-summary-block {
+    margin-top: 24px;
+    padding: 24px;
+    border: 1px solid #d7dbe3;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 12px 28px rgba(20, 24, 40, 0.08);
+  }
+
+  .validation-summary-block table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+  }
+
+  .validation-summary-block th,
+  .validation-summary-block td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+  }
+
+  .validation-summary-block th {
+    background: #f3f3f3;
+  }
+
+  .validation-summary-block .PASS {
+    color: #0a7a28;
+    font-weight: 700;
+  }
+
+  .validation-summary-block .FAIL {
+    color: #b42318;
+    font-weight: 700;
+  }
+
+  .validation-summary-block .SKIP {
+    color: #666;
+    font-weight: 700;
+  }
+</style>
+</head>
+
+<body onload="checkCookies()">
+
+<header>
+<h1>
+<img alt="button" border="0" width="1000" height="150" src="title.png" align="center"/>
+</h1>
+
+<nav class="navbar">
+  <ul>
+    <li><a class="nav-btn" href="index.html">Home</a></li>
+    <li><a class="nav-btn" href="download.html">Download</a></li>
+    <li><a class="nav-btn" href="benchmarks.html">Benchmarks</a></li>
+    <li><a class="nav-btn" href="projects.html">Projects</a></li>
+    <li><a class="nav-btn" href="blog.html">Blog</a></li>
+    <li><a class="nav-btn" href="https://github.com/luchete80">GitHub</a></li>
+  </ul>
+</nav>
+</header>
+
+<div class="holy-grail-grid">
+
+<main class="main-content">
+
+<h2>Solver Validation</h2>
+
+<p>
+This page is separated from the benchmark catalog because it tracks solver verification and automated validation status, not only industrial benchmark narratives.
+</p>
+
+<p>
+The table below reflects the current HTML summary generated in <code>../weldform-engine/validation/reports/summary.html</code>.
+</p>
+
+<section class="case-section">
+  <h3>Current validation report</h3>
+  <div class="validation-summary-block">
+    <h1>Validation Summary</h1>
+    <p>Generated: 2026-06-22 16:39 UTC<br>Source commit: <code>39bf0c0</code></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Suite</th>
+          <th>Caso</th>
+          <th>Fisica</th>
+          <th>Malla</th>
+          <th>Valida</th>
+          <th>Ref</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>implicit</td>
+          <td>Compression Axisymm</td>
+          <td>Implicit Contact</td>
+          <td>Axisymmetric Quad</td>
+          <td>remeshing/shear-friction</td>
+          <td>041a03c</td>
+          <td class="PASS">PASS</td>
+        </tr>
+        <tr>
+          <td>implicit</td>
+          <td>compression_tetra_qt</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>e8fe086</td>
+          <td class="PASS">PASS</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<p class="case-nav">
+  <a href="benchmarks.html">Back to benchmarks</a>
+  <a href="project_weldformfem.html">Go to WeldFormFEM</a>
+</p>
+
+</main>
+
+<section class="left-sidebar">
+<h3>Scope</h3>
+
+<ul>
+<li>Automated checks</li>
+<li>Reference comparison</li>
+<li>Pass/fail status</li>
+<li>Solver regression tracking</li>
+</ul>
+
+</section>
+
+<aside class="right-sidebar">
+
+<h2>Why separate it</h2>
+
+<p>
+Benchmarks explain representative mechanics problems. Solver validation tracks whether the code is still reproducing expected results case by case.
+</p>
+
+<p>
+Keeping both pages separate makes the industrial benchmark section cleaner and gives the solver status its own place.
+</p>
+
+</aside>
+
+<footer class="footer">
+OpenSource Mechanics
+</footer>
+
+</div>
+
+<script src="./sticky.js"></script>
+
+</body>
+
+<script>
+function checkCookies() {
+}
+</script>
+
+</html>
