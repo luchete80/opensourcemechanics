@@ -295,6 +295,27 @@ a:active {
   border-radius: 4px;
 }
 
+.validation-summary-block .PASS,
+.validation-summary-block td.PASS,
+.validation-summary-block span.PASS {
+  color: #22c55e !important;
+  font-weight: 700;
+}
+
+.validation-summary-block .FAIL,
+.validation-summary-block td.FAIL,
+.validation-summary-block span.FAIL {
+  color: #ef4444 !important;
+  font-weight: 700;
+}
+
+.validation-summary-block .SKIP,
+.validation-summary-block td.SKIP,
+.validation-summary-block span.SKIP {
+  color: #94a3b8 !important;
+  font-weight: 700;
+}
+
 .download-hero {
   margin: 8px 0 28px;
   padding: 28px;
