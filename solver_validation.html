@@ -83,6 +83,65 @@ The table below reflects the current HTML summary generated in <code>../weldform
 </p>
 
 <section class="case-section">
+  <h3>Generated validation report</h3>
+  <div class="validation-summary-block">
+    <h1>Validation Summary</h1>
+    <p>Generated: 2026-06-23 13:07 UTC<br>Platform: Linux<br>Source commit: <code>ba670e3</code></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Suite</th>
+          <th>Case</th>
+          <th>Physics</th>
+          <th>Mesh</th>
+          <th>Validates</th>
+          <th>Reference</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>implicit</td>
+          <td>Compression Axisymm</td>
+          <td>Implicit Contact</td>
+          <td>Axisymmetric Quad</td>
+          <td>remeshing/shear-friction</td>
+          <td>041a03c</td>
+          <td class="PASS">PASS</td>
+        </tr>
+        <tr>
+          <td>implicit</td>
+          <td>closed_die_2d</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>fef584d</td>
+          <td class="PASS">PASS</td>
+        </tr>
+        <tr>
+          <td>implicit</td>
+          <td>extrusion</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>fef584d</td>
+          <td class="PASS">PASS</td>
+        </tr>
+        <tr>
+          <td>implicit</td>
+          <td>compression_tetra_qt</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>e8fe086</td>
+          <td class="FAIL">FAIL</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="case-section">
   <h3>Current validation report</h3>
   <div class="validation-summary-block">
     <h1>Validation Summary</h1>
