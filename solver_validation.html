@@ -46,6 +46,30 @@
     color: #666;
     font-weight: 700;
   }
+
+  .plastic-validation-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0 32px;
+  }
+
+  .plastic-validation-grid td {
+    width: 50%;
+    padding: 10px;
+    vertical-align: top;
+  }
+
+  .plastic-validation-grid .case-name {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 18px;
+  }
+
+  .plastic-validation-grid img {
+    width: 70%;
+    height: auto;
+    display: block;
+  }
 </style>
 </head>
 
@@ -73,6 +97,33 @@
 <main class="main-content">
 
 <h2>Solver Validation</h2>
+
+<section class="case-section">
+  <table class="plastic-validation-grid">
+    <tbody>
+      <tr>
+        <td>
+          <div class="case-name">closed_die_2d</div>
+          <img src="images/solver_validation/closed_die_2d_run0_t1_dtFalse__closed_die_2d.plastic.png" alt="closed_die_2d">
+        </td>
+        <td>
+          <div class="case-name">compression_axisymm</div>
+          <img src="images/solver_validation/compression_axisymm_run0_t1_dtFalse__compression_axisymm.plastic.png" alt="compression_axisymm">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="case-name">compression_tetra_qt</div>
+          <img src="images/solver_validation/compression_tetra_qt_run0_t1_dtFalse__compression_tetra_qt.plastic.png" alt="compression_tetra_qt">
+        </td>
+        <td>
+          <div class="case-name">extrusion</div>
+          <img src="images/solver_validation/extrusion_run0_t1_dtFalse__extrusion.plastic.png" alt="extrusion">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
 <p>
 This page is separated from the benchmark catalog because it tracks solver verification and automated validation status, not only industrial benchmark narratives.
