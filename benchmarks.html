@@ -32,120 +32,86 @@
 
 <h2>Validation Cases</h2>
 
-<p>
-Benchmarks and validation cases sit at the same strategic level as videos: not because they drive more traffic today, but because they become durable technical assets.
-</p>
-
-<p>
-One well-documented benchmark can remain useful for years through citations, technical searches, GitHub, LinkedIn, and direct comparison workflows. For that reason, this section is organized as one main landing page with categories inside it.
-</p>
-
 <section class="benchmark-category">
   <div class="benchmark-category-header">
-    <h3>Solver Validation</h3>
+    <h3>&#9733; Featured Benchmarks</h3>
     <div class="benchmark-category-divider"></div>
   </div>
   <div class="benchmark-category-list">
     <article class="benchmark-card">
-      <h3><a href="solver_validation.html">Validation Summary</a></h3>
-      <p>Automated solver validation report with current pass/fail status and references. Kept separate from the industrial benchmark catalog.</p>
-      <div class="publication-tags"><span>Solver Validation</span><span>Linked</span></div>
+      <h3><a href="#closed-die-forging">Closed Die Forging</a></h3>
+      <p>Featured industrial forming case for cavity filling, flash generation, and robust confined contact.</p>
+      <div class="publication-tags"><span>Featured</span><span>Industrial Case</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><a href="#direct-extrusion">Extrusion</a></h3>
+      <p>Featured extrusion benchmark for material flow through the die, pressure behavior, and shape prediction.</p>
+      <div class="publication-tags"><span>Featured</span><span>Industrial Case</span></div>
     </article>
   </div>
 </section>
 
 <section class="benchmark-category">
   <div class="benchmark-category-header">
-    <h3>FEM Fundamentals</h3>
-    <div class="benchmark-category-divider"></div>
-  </div>
-  <div class="benchmark-category-list">
-    <article class="benchmark-card">
-      <h3><span>Cantilever Beam</span></h3>
-      <p>Baseline structural case for checking simple elastic bending behavior and reference displacement fields.</p>
-      <div class="publication-tags"><span>FEM Fundamentals</span><span>Planned</span></div>
-    </article>
-
-    <article class="benchmark-card">
-      <h3><span>Cook Membrane</span></h3>
-      <p>Standard bending-dominated membrane test for displacement accuracy and locking sensitivity.</p>
-      <div class="publication-tags"><span>FEM Fundamentals</span><span>Planned</span></div>
-    </article>
-
-    <article class="benchmark-card">
-      <h3><span>Patch Test</span></h3>
-      <p>Consistency check for basic element behavior under constant-strain states.</p>
-      <div class="publication-tags"><span>FEM Fundamentals</span><span>Planned</span></div>
-    </article>
-  </div>
-</section>
-
-<section class="benchmark-category">
-  <div class="benchmark-category-header">
-    <h3>Contact &amp; Nonlinear Mechanics</h3>
-    <div class="benchmark-category-divider"></div>
-  </div>
-  <div class="benchmark-category-list">
-    <article class="benchmark-card">
-      <h3><span>Contact Block</span></h3>
-      <p>Reference contact case for normal enforcement, pressure transfer, and basic nonlinear convergence behavior.</p>
-      <div class="publication-tags"><span>Contact</span><span>Planned</span></div>
-    </article>
-
-    <article class="benchmark-card">
-      <h3><span>Hertz Contact</span></h3>
-      <p>Classical contact-pressure benchmark with an analytical background for comparison.</p>
-      <div class="publication-tags"><span>Contact</span><span>Planned</span></div>
-    </article>
-
-    <article class="benchmark-card">
-      <h3><span>Penalty Contact</span></h3>
-      <p>Useful for studying enforcement stiffness, penetration control, and robustness across contact settings.</p>
-      <div class="publication-tags"><span>Contact</span><span>Planned</span></div>
-    </article>
-  </div>
-</section>
-
-<section class="benchmark-category">
-  <div class="benchmark-category-header">
-    <h3>Metal Forming</h3>
+    <h3>Industrial Cases</h3>
     <div class="benchmark-category-divider"></div>
   </div>
   <div class="benchmark-category-list">
     <article class="benchmark-card">
       <h3><a href="benchmark_upsetting_compression.html">Cold Upsetting (Coulomb Friction)</a></h3>
       <p>Open-die upsetting benchmark for validating the Coulomb contact law, pressure-dependent traction, and load evolution.</p>
-      <div class="publication-tags"><span>Metal Forming</span><span>Linked</span></div>
+      <div class="publication-tags"><span>Industrial Cases</span><span>Linked</span></div>
     </article>
 
     <article class="benchmark-card">
       <h3><a href="benchmark_hot_upsetting_shear.html">Hot Upsetting (Shear Friction)</a></h3>
       <p>Open-die upsetting benchmark for validating the shear-friction law, sticking-limit behavior, and bulk-forming contact response.</p>
-      <div class="publication-tags"><span>Metal Forming</span><span>Linked</span></div>
+      <div class="publication-tags"><span>Industrial Cases</span><span>Linked</span></div>
     </article>
 
     <article class="benchmark-card">
       <h3><span>Ring Compression</span></h3>
       <p>Planned calibration case for friction sensitivity and barreling/contact trends.</p>
-      <div class="publication-tags"><span>Metal Forming</span><span>Planned</span></div>
+      <div class="publication-tags"><span>Industrial Cases</span><span>Planned</span></div>
     </article>
 
     <article class="benchmark-card">
       <h3><a href="benchmark_backward_extrusion.html">Backward Extrusion</a></h3>
       <p>Multi-stage cold forming reference case tied to the Torx nut study and suitable for contact-heavy validation.</p>
-      <div class="publication-tags"><span>Metal Forming</span><span>Linked</span></div>
+      <div class="publication-tags"><span>Industrial Cases</span><span>Linked</span></div>
     </article>
 
-    <article class="benchmark-card">
+    <article class="benchmark-card" id="closed-die-forging">
       <h3><a href="benchmark_closed_die_forging.html">Closed Die Forging</a></h3>
       <p>Impression-die forging benchmark intended for validating filling, flash generation, and contact robustness.</p>
-      <div class="publication-tags"><span>Metal Forming</span><span>Linked</span></div>
+      <div class="publication-tags"><span>Industrial Cases</span><span>Linked</span></div>
+    </article>
+
+    <article class="benchmark-card" id="direct-extrusion">
+      <h3><a href="benchmark_direct_extrusion.html">Direct Extrusion</a></h3>
+      <p>Forward extrusion case for checking flow through the die, pressure levels, and steady-state shape prediction.</p>
+      <div class="publication-tags"><span>Industrial Cases</span><span>Linked</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="benchmark-category">
+  <div class="benchmark-category-header">
+    <h3>Thermo-Mechanical</h3>
+    <div class="benchmark-category-divider"></div>
+  </div>
+  <div class="benchmark-category-list">
+    <article class="benchmark-card">
+      <h3><span>Hot Forging</span></h3>
+      <p>Planned coupled benchmark for temperature-dependent flow, die contact, and deformation evolution.</p>
+      <div class="publication-tags"><span>Thermo-Mechanical</span><span>Planned</span></div>
     </article>
 
     <article class="benchmark-card">
-      <h3><a href="benchmark_direct_extrusion.html">Direct Extrusion</a></h3>
-      <p>Forward extrusion case for checking flow through the die, pressure levels, and steady-state shape prediction.</p>
-      <div class="publication-tags"><span>Metal Forming</span><span>Linked</span></div>
+      <h3><span>Thermal Coupling Cases</span></h3>
+      <p>Reserved group for coupled thermal-mechanical validation with heat transfer and transient temperature fields.</p>
+      <div class="publication-tags"><span>Thermo-Mechanical</span><span>Planned</span></div>
     </article>
   </div>
 </section>
@@ -190,20 +156,66 @@ One well-documented benchmark can remain useful for years through citations, tec
 
 <section class="benchmark-category">
   <div class="benchmark-category-header">
-    <h3>Thermo-Mechanical</h3>
+    <h3>Contact &amp; Nonlinear Mechanics</h3>
     <div class="benchmark-category-divider"></div>
   </div>
   <div class="benchmark-category-list">
     <article class="benchmark-card">
-      <h3><span>Hot Forging</span></h3>
-      <p>Planned coupled benchmark for temperature-dependent flow, die contact, and deformation evolution.</p>
-      <div class="publication-tags"><span>Thermo-Mechanical</span><span>Planned</span></div>
+      <h3><span>Contact Block</span></h3>
+      <p>Reference contact case for normal enforcement, pressure transfer, and basic nonlinear convergence behavior.</p>
+      <div class="publication-tags"><span>Contact</span><span>Planned</span></div>
     </article>
 
     <article class="benchmark-card">
-      <h3><span>Thermal Coupling Cases</span></h3>
-      <p>Reserved group for coupled thermal-mechanical validation with heat transfer and transient temperature fields.</p>
-      <div class="publication-tags"><span>Thermo-Mechanical</span><span>Planned</span></div>
+      <h3><span>Hertz Contact</span></h3>
+      <p>Classical contact-pressure benchmark with an analytical background for comparison.</p>
+      <div class="publication-tags"><span>Contact</span><span>Planned</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>Penalty Contact</span></h3>
+      <p>Useful for studying enforcement stiffness, penetration control, and robustness across contact settings.</p>
+      <div class="publication-tags"><span>Contact</span><span>Planned</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="benchmark-category">
+  <div class="benchmark-category-header">
+    <h3>FEM Fundamentals</h3>
+    <div class="benchmark-category-divider"></div>
+  </div>
+  <div class="benchmark-category-list">
+    <article class="benchmark-card">
+      <h3><span>Cantilever Beam</span></h3>
+      <p>Baseline structural case for checking simple elastic bending behavior and reference displacement fields.</p>
+      <div class="publication-tags"><span>FEM Fundamentals</span><span>Planned</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>Cook Membrane</span></h3>
+      <p>Standard bending-dominated membrane test for displacement accuracy and locking sensitivity.</p>
+      <div class="publication-tags"><span>FEM Fundamentals</span><span>Planned</span></div>
+    </article>
+
+    <article class="benchmark-card">
+      <h3><span>Patch Test</span></h3>
+      <p>Consistency check for basic element behavior under constant-strain states.</p>
+      <div class="publication-tags"><span>FEM Fundamentals</span><span>Planned</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="benchmark-category">
+  <div class="benchmark-category-header">
+    <h3>Solver Validation</h3>
+    <div class="benchmark-category-divider"></div>
+  </div>
+  <div class="benchmark-category-list">
+    <article class="benchmark-card">
+      <h3><a href="solver_validation.html">Validation Summary</a></h3>
+      <p>Automated solver validation report with current pass/fail status and references. Kept separate from the industrial benchmark catalog.</p>
+      <div class="publication-tags"><span>Solver Validation</span><span>Linked</span></div>
     </article>
   </div>
 </section>
@@ -214,13 +226,15 @@ One well-documented benchmark can remain useful for years through citations, tec
 <h3>Current Links</h3>
 
 <ul>
-<li>Solver Validation</li>
+<li><a href="#closed-die-forging">Featured: Closed Die Forging</a></li>
+<li><a href="#direct-extrusion">Featured: Extrusion</a></li>
 <li>Cold Upsetting</li>
 <li>Direct Extrusion</li>
 <li>Backward Extrusion</li>
 <li>Closed Die Forging</li>
 <li>Cantilever Beam (Explicit)</li>
 <li>2D/3D Tensile Test</li>
+<li>Solver Validation</li>
 </ul>
 
 </section>
@@ -238,7 +252,7 @@ Solver validation now has its own dedicated page because it is closer to regress
 </p>
 
 <p>
-For now, the active metal forming cases, the solver validation summary, the explicit cantilever beam, and the explicit 2D/3D tensile test have dedicated pages. The rest stay visible as roadmap entries without links.
+For now, the active industrial cases, the solver validation summary, the explicit cantilever beam, and the explicit 2D/3D tensile test have dedicated pages. The rest stay visible as roadmap entries without links.
 </p>
 
 </aside>
